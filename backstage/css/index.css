@@ -1,0 +1,1755 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+   font-size: 16px; color: rgb(210, 210, 210)
+    } 
+    input:-moz-placeholder, textarea:-moz-placeholder { 
+    font-size: 16px; color: rgb(210, 210, 210)
+    } 
+    input::-moz-placeholder, textarea::-moz-placeholder { 
+  font-size: 16px; color: rgb(210, 210, 210)
+    } 
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    font-size: 16px; color: rgb(210, 210, 210)
+    } 
+    input{
+        text-indent: 8px;
+    }
+ul{
+    list-style: none; 
+}
+table { 
+  border-collapse:collapse; 
+  border-spacing:0; 
+ } 
+ th,td { 
+  padding: 0; 
+  margin: 0;
+ }
+ table td{
+     overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+ }
+header{
+    width: 1920px;
+    height: 90px;
+    background-image: url('../img/ico/u1.jpg');
+    background-size: 1920px 90px;
+    position: relative;
+
+}
+.gt-headerImg{
+    height: 40px;
+    width: 124px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 230px;
+}
+.gt-headerImg img{
+    width: 100%;
+    height: 100%;
+}
+.gt-hepl{
+    width: 82px;
+    height: 80px;
+    left: 950px;
+    line-height: 80px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    font-family: "Microsoft YaHei UI";
+    color: rgb(53, 53, 53);
+    font-size: 16px;  
+    }
+    .gt-esc{
+      width: 82px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    left: 1100px;
+    color: rgb(53, 53, 53);
+    font-size: 16px; 
+    }
+
+    .gt-hover:hover{
+        border-bottom: 2px solid rgb(1,170,237);
+        color: rgb(1,170,237);
+    }
+    .gt-bigBox{
+        width: 1920px;
+        height: 1530px;
+        position: relative;
+    }
+    /*导航栏*/
+    nav{
+    width: 90px;
+    height: 1526px;
+    background-image: url('../img/ico/u383.png');
+    background-size: 90px 1526px;
+    float: left;
+    }
+
+    .gt-navUl{
+        list-style: none;
+        width: 100%;
+        color: white;
+       
+    }
+    .gt-navUl li{
+       
+    
+     height: 90px;
+     width:90px;
+     text-align: center;
+    }
+    .gt-liFrist{
+       margin-top: 60px;
+    }
+    .gt-navList{
+  padding-top: 10px;
+    }
+    .gt-navUl li img{
+         width: 34px;
+         height: 34px;
+        
+    }
+
+    .gt-li{
+        background-image: url('../img/ico/u437.png');
+        background-size: 90px 90px;
+        font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #2F4056;
+    }
+    /*二级导航*/
+    .gt-towNav{
+    width: 140px;
+    height: 1526px;
+    background-image: url('../img/ico/u444.png');
+    background-size: 90px 1526px;
+    float: left;
+       font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #353535;
+    margin-left:-1px;
+    }
+
+.gt-towNavUl{
+     margin-top: 60px;
+  list-style: none;
+text-align: center;
+}
+.gt-towNavUl li{
+width: 140px;
+height: 60px;
+text-align: center;
+line-height: 60px;
+cursor: pointer;
+}
+.gt-towNav .gt-towNavUl .gt-bludBack{
+        background-color: rgba(1, 170, 237, 1);
+        color: white;
+}
+.gt-towNavhonve:hover{
+    background-color: rgb(242, 2420, 242);
+}
+
+/*右侧内容*/
+.gt-center{
+width: 1674px;
+height: 1526px;
+float: left;
+margin-left: 6px;
+}
+.gt-Campuses{
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #353535;
+    position: relative;
+    }
+    .gt-CampusesSpan{
+        position: absolute;
+        top:0px;
+        height: 17px;
+        display: inline-block;
+        line-height: 17px;
+    }
+.gt-shadow{
+    margin-right: 6px;
+    display: inline-block;
+    width: 4px;
+    height: 17px;
+    background: inherit;
+    background-color: rgba(1, 170, 237, 1);
+}
+.gt-CampuAdd{
+    margin-top: 26px;
+    margin-left: 20px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: rgba(1, 170, 237, 1);
+    border-radius: 2px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    }
+    .gt-CampuAdd:hover{
+background-color: rgba(1, 185, 254, 1);
+    }
+    /*表格*/
+    .gt-DateList{
+       margin-left: 20px;
+       margin-top: 30px;
+    width: 790px;
+    line-height: 30px;
+   border: 1px solid #e4e4e4;
+}
+.gt-datatabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-weight: 400;
+    font-style: normal;
+        color: #333333;
+  font-size: 14px;
+}
+
+.gt-datatabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-datatabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-datatabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动列表*/
+ .gt-datli1{
+width: 100px;
+}
+.gt-datli2{
+width: 90px;
+}
+ .gt-datli3{
+width: 150px;
+}
+ .gt-datli4{
+width: 100px;
+}
+ .gt-datli5{
+width: 90px;
+}
+
+
+.gt-datatabl tbody tr:hover td { background-color: #f0f0f1; }
+.gt-editors{
+    color: #FCBA65;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.gt-del{
+    color: #FCBA65;
+    cursor: pointer;
+}
+.gt-roomdSpan{
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #FCBA65;
+    cursor: pointer;
+}
+/*设置表格*/
+.gt-setuptabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-weight: 400;
+    font-style: normal;
+        color: #333333;
+  font-size: 14px;
+}
+
+.gt-setuptabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-setuptabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-setuptabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动列表*/
+ .gt-setup1{
+width: 130px;
+}
+.gt-setup2{
+width: 240px;
+}
+ .gt-setup3{
+width: 80px;
+position: relative;
+
+}
+
+.gt-setuptabl tbody tr:hover td { background-color: #f0f0f1; }
+.gt-setupColor{
+    color: #FCBA65;
+    cursor: pointer;
+    
+}
+.gt-NoClickBg{
+  
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1660px;
+    background-size: 100% 1660px;
+    background-repeat: no-repeat;
+    background-image: url('../img/ico/u2518.png');
+    filter:alpha(opacity=30); /*IE滤镜，透明度50%*/
+    -moz-opacity:0.3; /*Firefox私有，透明度50%*/
+    opacity:0.3;/*其他，透明度50%*/
+    z-index: 10;
+
+}
+
+.gt-NoClickBg2{
+  
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1660px;
+    background-size: 100% 1660px;
+    background-repeat: no-repeat;
+    background-image: url('../img/ico/u2518.png');
+    filter:alpha(opacity=30); /*IE滤镜，透明度50%*/
+    -moz-opacity:0.3; /*Firefox私有，透明度50%*/
+    opacity:0.3;/*其他，透明度50%*/
+    z-index: 100;
+
+}
+.gt-setbox{
+        position: absolute;
+        left: 329px;
+        top: 247px;
+        z-index: 99;
+        background-color: white;
+        width: 900px;
+        height:640px;
+        font-family: 'Microsoft YaHei UI';
+        font-weight: 400;
+        font-size: 14px;
+        color: #333333;
+}
+.gt-NewaddSetup{
+      font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+.gt-setherad{
+    width:100%;
+    height: 42px;
+     line-height: 42px;
+     background-color: rgba(248, 248, 248, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(238, 238, 238, 1);
+}
+.gt-setheradWord{
+    height: 42px;
+   
+    float:left;
+   padding-left: 5px;
+}
+.gt-setheradImg{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.gt-setheradImg img{
+width: 100%;
+height: 100%;
+}
+.gt-setInput{
+    margin-left: 30px;
+}
+.gt-setInput input{
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+        width: 70px;
+    height: 30px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-recommend{
+    position: relative;
+       height: 160px;
+}
+.gt-setUp{
+  
+    height:150px;
+}
+
+
+.gt-setopp ul {
+    margin-left: 60px;
+}
+.gt-setopp ul li {
+    margin-top: 20px;
+
+}
+.gt-setopDs{
+   
+  float: left;
+}
+.gt-setopList{
+
+float: left;
+}
+.gt-etopDateLi{
+    margin-top: 0px;
+    width: 499px;
+}
+.gt-setli0{
+    width: 130px;
+}
+.gt-setli1{
+    width: 40px;
+}
+.gt-recomA{
+    position: absolute;
+    top:-5px;
+    left: 115px;
+    /* display: inline-block； */
+   
+}
+
+.gt-recomRun{
+    display: inline-block;
+    position: absolute;
+    top:4px;
+    left: 0px;
+    width: 20px;
+    height: 20px;  
+  background-image: url('../img/ico/u777.png')
+}
+.gt-recomB{
+     position: absolute;
+  top:33px;
+    left: 115px;
+}
+.gt-recomC{
+ position: absolute;
+   top:70px;
+    left: 115px;
+}
+.gt-smallRun{
+    display: inline-block;
+    position: absolute;
+    top:5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/ico/u770.png');
+    background-size: 10px 10px;
+}
+.gt-recommend div .gt-BludClick{
+     background-image: url('../img/ico/u768.png');
+}
+
+.gt-recomRun:hover{
+     background-image: url('../img/ico/u777_mouseOver.png');
+}
+.gt-setBut{
+   position: relative;
+   width: 300px;
+   height: 40px;
+}
+.gt-setButSpan{
+    display: inline-block;
+    width: 30px;
+    height: 30px; 
+    background-image: url('../img/ico/u758.png');
+    background-size: 30px 30px;
+    position: absolute;
+    top:-2px;
+}
+.gt-setLf{
+    margin-left: 30px;
+}
+.gt-smallSetbut{
+    width: 14px;
+    height: 14px;
+    top:4px;
+    left: 7px;
+  background-image: url('../img/ico/u760.png');
+    background-size: 14px 14px;
+    position: absolute;
+}
+.gt-saveBut{
+    
+    text-align: left;
+}
+.gt-preserved{
+    display: inline-block;
+        width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: inherit;
+    background-color: rgba(1, 170, 237, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 170, 237, 1);
+    border-radius: 2px;
+        box-shadow: none;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+   margin-right: 50px;
+   cursor: pointer;
+}
+.gt-preserved:hover{
+    background-color: rgba(1, 185, 254, 1);
+    border-color: rgba(1, 185, 254, 1);
+}
+.gt-getaway{
+    display:inline-block;
+    width: 60px;
+    height: 30px;
+     text-align: center;
+    line-height: 30px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(201, 201, 201, 1);
+    border-radius: 2px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #353535;
+    cursor: pointer;
+}
+.gt-getaway:hover{
+
+  border-color: rgba(1, 170, 237, 1);
+}
+
+/*基础guanli*/
+.gt-basis{
+        width: 1693px;
+    height: 60px;
+    background: inherit;
+    background-color: rgba(245, 245, 245, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    position: relative;
+}
+
+.gt-basisBut{
+        width: 140px;
+    height: 48px;
+    top:11px;
+    left: 70px;
+    line-height: 48px;
+    box-sizing: border-box;
+   border-bottom: 1px solid rgba(210, 210, 210, 1);
+    display: inline-block;
+    background: inherit;
+   position: absolute;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #353535;
+    text-align: center;
+    cursor: pointer;
+}
+ .gt-basis .gt-basisclick{
+ background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-bottom: none;
+    color: rgb(1, 170, 237);
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    box-sizing: border-box;
+   border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.gt-basisNexe{
+     width: 140px;
+    height: 48px;
+    top:11px;
+    left: 260px;
+    line-height: 48px;
+    display: inline-block;
+    background: inherit;
+   position: absolute;
+   box-sizing: border-box;
+   border-bottom: 1px solid rgba(210, 210, 210, 1);
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #353535;
+    text-align: center;
+    cursor: pointer;
+}
+.gt-basisHover:hover{
+        color: rgb(1, 170, 237);
+}
+.gt-newAdd{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+        background: inherit;
+    background-color: rgba(1, 170, 237, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 170, 237, 1);
+    border-radius: 2px;
+    margin-top: 40px;
+    margin-left: 75px;
+    cursor: pointer;
+}
+.gt-newAdd:hover{
+    background-color: rgba(1, 185, 254, 1);
+}
+
+  /*表格*/
+    .gt-basisList{
+       margin-left:75px;
+       margin-top: 30px;
+    width: 598px;
+    line-height: 30px;
+   border: 1px solid #e4e4e4;
+}
+.gt-basistabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-weight: 400;
+    font-style: normal;
+        color: #333333;
+  font-size: 14px;
+}
+
+.gt-basistabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-basistabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-basistabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动列表*/
+ .gt-basis1{
+width: 100px;
+}
+.gt-basis2{
+width: 150px;
+}
+ .gt-basis3{
+width: 80px;
+}
+
+.gt-basistabl tbody tr:hover td { background-color: #f0f0f1; }
+.gt-nexButn{
+    width: 40px;
+    height: 29px;
+    float: left;
+    border-right: 1px solid rgba(210, 210, 210, 1);
+    display: inline-block;
+    background-image: url('../img/ico/u232.png');
+    background-size: 40px 30px;
+     line-height: 30px;
+     cursor: pointer;
+    
+}
+.gt-btuoBox{
+     width: 269px;
+    height: 29px;
+      background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+     text-align: center;
+     position: relative;
+    text-align: center;
+     margin-top: 20px;
+     margin-left: 405px;
+      background-repeat: no-repeat;
+    
+}
+
+.gt-logButn{
+    float: right;
+     width: 63px;
+    height: 29px;
+    display: inline-block;
+    background-image: url('../img/ico/u236.png');
+    background-repeat: no-repeat;
+    background-size:60px 29px;
+ line-height: 30px;
+   border-left: 1px solid rgba(210, 210, 210, 1);
+  
+     
+}
+.gt-rimg{
+   
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  background-repeat: no-repeat;
+}
+.gt-rimg img{
+    width: 7px;
+    height: 12px;
+}
+    .gt-buleBckg{
+        
+      color: #01AAED;        
+    }
+.gt-buleBckg:hover{
+    background-image: url('../img/ico/u234_mouseOver.png');
+     background-size:100% 100%;
+       background-repeat: no-repeat;
+}
+.gt-logButn:hover{
+    background-image: url('../img/ico/u236_mouseOver.png');
+     background-size:100% 100%;
+       background-repeat: no-repeat;
+}
+.gt-transf{
+    transform:rotate(180deg);
+-ms-transform:rotate(180deg); /* IE 9 */
+-moz-transform:rotate(180deg); /* Firefox */
+-webkit-transform:rotate(180deg); /* Safari and Chrome */
+-o-transform:rotate(180deg); /* Opera */
+}
+
+/*年级新增内容*/
+.gt-addClass{
+    position: absolute;
+    top:300px;
+    left:390px;
+    width: 400px;
+    height: 240px;
+    background-image: url('../img/ico/u719.png');
+    background-size: 100% 100%;
+    z-index: 66;
+    text-align: center;
+}
+.gt-addSubjects{
+     position: absolute;
+    top:300px;
+    left:390px;
+    width: 400px;
+    height: 240px;
+    background-image: url('../img/ico/u719.png');
+    background-size: 100% 100%;
+    z-index: 66;
+    text-align: center;
+}
+.gt-addClassHerad{
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background: inherit;
+    background-color: rgba(248, 248, 248, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(238, 238, 238, 1);
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+}
+.gt-heradLf{
+float: left;
+margin-left: 10px;
+}
+.gt-heradRt{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    display: inline-block;   
+}
+.gt-heradRt img{
+     width: 16px;
+    height: 16px;
+}
+.gt-addIput{
+    margin-top: 41px;;
+    margin-left: -29px;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+}
+.gt-addIput input{
+    width: 200px;
+    height: 30px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-addBut{
+    margin-top: 60px;
+    margin-left: -15px;
+}
+
+/*<!--学校管理 新增-->*/
+.gt-Addadmini{
+        font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+/*下拉列表*/
+.gt-CLSectA{
+    display: inline-block;
+    width: 300px;
+     height: 38px;
+     position: relative;
+        box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-CLSectAa{
+     width: 98%;
+     height: 100%;
+     font-size: 14px;
+     line-height: 28px;
+     border:0px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background:url('../img/ico/u584.png') no-repeat right center; 
+     background-size: 15px 9px;
+}
+
+.gt-facade{
+    margin-left: 104px;
+  margin-top: 30px;
+}
+.gt-malf{
+    margin-right: 21px;
+}
+.gt-textBox{
+    display: inline-block;
+   position: relative;
+   margin-left: 118px;
+    margin-top: 49px;
+}
+.gt-texetSpan{
+width: 300px;
+    height: 38px;
+    position: absolute;
+    top:-9px;
+    left: 96px;
+    text-align: center;
+    line-height: 38px;
+    display: inline-block;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(230, 230, 230, 1);
+    border-radius: 2px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #999999;
+    
+}
+
+.gt-doorName{
+    margin-top: 48px;
+margin-left: 118px;
+}
+.gt-doorName input{
+    margin-left: 26px;
+    text-indent: 10px;
+        width: 300px;
+    height: 38px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-doorImg{
+        width: 80px;
+    height: 80px;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+    background: inherit;
+    background-color: rgba(245, 245, 245, 1);
+}
+.gt-doorImg img{
+    width: 40px;
+    height: 40px;
+}
+.gt-doorIco{
+margin-top: 45px;
+margin-left: 116px;
+position: relative;
+
+}
+.gt-choose{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background: inherit;
+    background-color: rgba(1, 170, 237, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 170, 237, 1);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 145px;
+}
+.gt-doorImg{
+    position: absolute;
+    top:-4px;
+    left: 106px;
+}
+.gt-doorPhote{
+    margin-left: 117px;
+    margin-top: 80px;
+}
+
+.gt-advice{
+    margin-left: 125px;
+}
+.gt-Logo{
+    position: relative;
+    margin-left: 82px;
+    margin-top:50px;
+}
+.gt-logoImg{
+display: inline-block;
+width: 280px;
+height: 90px;
+background-color: rgba(245, 245, 245, 1);
+text-align: center;
+line-height: 90px;
+margin-left: 140px;
+
+}
+.gt-logoImg img{
+width: 40px;
+height: 40px;
+}
+.gt-logoChoose{
+    text-align: left;
+    display: inline-block;
+    margin-left: 30px;
+}
+.gt-choseImg{
+    margin-bottom: 6px;
+    margin-left: 0px;
+}
+.gt-logoSize{
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #999999;
+}
+.gt-logoErp{
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+/*表格*/
+    .gt-bannerList{
+       margin-left: 31px;
+       margin-top: 30px;
+    width: 690px;
+    line-height: 30px;
+   border: 1px solid #e4e4e4;
+   display: inline-block;
+}
+.gt-bannertabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-weight: 400;
+    font-style: normal;
+        color: #333333;
+  font-size: 14px;
+}
+
+.gt-bannertabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-bannertabl tbody tr:nth-child(odd) td { background-color: #f9f9f9; }
+/*偶数行*/
+.gt-bannertabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动列表*/
+ .gt-banner1{
+width: 160px;
+}
+.gt-banner2{
+width: 200px;
+}
+ .gt-banner3{
+width: 120px;
+}
+ .gt-bannertabl .gt-tdImg{
+height: 80px;
+ }
+ .gt-tdImg img{
+     width: 125px;
+     height: 60px;
+ }
+
+ .gt-banner2 input{
+     width: 280px;
+    height: 30px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+ }
+.gt-bannertabl tbody tr:hover td { background-color: #f0f0f1; }
+
+.gt-Banner{
+    margin-left: 81px;
+    margin-top: 30px;
+}
+.gt-photeBanner{
+  float: left;
+  margin-top: 24px;
+}
+.gt-bannerColor{
+    color: #FCBA64;
+    margin-right: 15px;
+}
+.gt-addButns{
+    width: 100px;
+    height: 30px;
+    float: left;
+    display: inline-block;
+    background: inherit;
+    background-color: rgba(1, 170, 237, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 170, 237, 1);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: none;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.gt-addButns:hover{
+     background-color: rgba(1, 185, 254, 1);
+      border-color: rgba(1, 185, 254, 1);
+}
+.gt-addButnsWord{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #999999;
+}
+.gt-addBanner{
+       margin-left: 142px;
+    margin-top: 42px;
+}
+.gt-addButnsWord{
+    margin-left: 20px;
+}
+.gt-buton{
+   margin-top: 117px;
+    margin-left: 144px;
+}
+
+/*教室编辑*/
+.gt-newAddroom{
+    width: 60px;
+    height: 30px;
+    float: left;
+    display: inline-block;
+    background: inherit;
+    background-color: rgba(1, 170, 237, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 170, 237, 1);
+    border-radius: 2px;
+    
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.gt-newAddroom:hover{
+    background-color: rgba(1, 185, 254, 1);
+     border-color: rgba(1, 185, 254, 1);
+
+}
+.gt-roomEsc{
+    float: left;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(201, 201, 201, 1);
+    border-radius: 2px;
+    text-align: center;
+     font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #353535;
+   cursor: pointer;
+}
+.gt-roomEsc:hover{
+     border-color: rgba(1, 170,237, 1);
+}
+.gt-newRoombox{
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+/*表格*/
+    .gt-RoomList{
+    width: 498px;
+    /*height: 492px;*/
+margin-top: 20px;
+margin-left: 40px;
+    line-height: 30px;
+   border: 1px solid #e4e4e4;
+   
+}
+.gt-Roomtabl{
+    width: 100%;
+    /*height: 100%;*/
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-weight: 400;
+    font-style: normal;
+        color: #333333;
+  font-size: 14px;
+}
+
+.gt-Roomtabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-Roomtabl tbody tr:nth-child(odd) td { background-color: #f9f9f9; }
+/*偶数行*/
+.gt-Roomtabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动列表*/
+ .gt-Room1{
+width: 50px;
+position: relative;
+}
+.gt-Room2{
+width: 300px;
+}
+ .gt-Room3{
+width: 100px;
+}
+.gt-Room3 span{
+    cursor: pointer;
+}
+ 
+.gt-Roomtabl tbody tr:hover td { background-color: #f0f0f1; }
+
+.gt-runChoose{
+        width: 20px;
+    height: 20px;
+display: inline-block;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-runChoose:hover{
+    border: 1px solid rgba(1,170,237,1);
+}
+.gt-chooseBox{
+    width: 498px;
+    margin-left: 43px;
+    margin-top: 20px;
+}
+.gt-chooseRt{
+    
+    height: 29px;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+        font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #353535;
+}
+.gt-chooseRt span{
+    cursor: pointer;
+}
+.gt-chooseLf{
+    display: inline-block;
+float: right;
+margin-left: 0px;
+margin-top: 0px;
+
+}
+.gt-addSetBut{
+        width: 100px;
+    height: 30px;
+}
+.gt-setAdd{
+     margin-top: 0px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+}
+
+/*搜索栏*/
+.gt-prSearc{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+   width: 200px;
+    height: 30px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+   margin-left: 32px;
+}
+.gt-prSearc input{
+    width: 150px;
+    height: 28px;
+    border: none;
+    outline: none;
+    margin-left:10px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+.gt-prSearcA{
+    display: inline-block;
+position: absolute;
+top:5px;
+right: 10px;
+cursor: pointer;
+
+}
+.gt-prSearc img{
+width:18px;
+height: 18px;
+
+}
+
+.gt-tableBox{
+    width: 100%;
+    height: 445px;
+    margin-top: 20px;
+}
+.gt-tableLf{
+    float:left;
+    width: 580px;
+  
+    margin-left: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+}
+.gt-tableRt{
+    margin-right: 40px;
+    float: right;
+    width: 198px;
+    height: 99%;
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+}
+
+ /*表格*/
+    .gt-steList{
+      
+    width: 100%;
+    line-height: 39px;
+    box-sizing: border-box;
+   /*border: 1px solid #e4e4e4;*/
+   
+}
+.gt-steLitabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-weight: 400;
+    font-style: normal;
+        color: #333333;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.gt-steLitabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   /*border-bottom: 1px solid white;*/
+ box-sizing: border-box;
+}
+/*奇数行*/
+.gt-steLitabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-steLitabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动列表*/
+ .gt-steLi1{
+width: 50px;
+position: relative;
+}
+
+.gt-steLi2{
+
+
+}
+ gt-steLi3{
+width: 80px;
+}
+.gt-steLi4{
+width: 80px;
+}
+.gt-steLi5{
+width: 80px;
+}
+.gt-steLitabl .gt-steLi6{
+width: 100px;
+border-right: none;
+}
+
+.gt-steLitabl  tbody tr:hover td { background-color: #f0f0f1; }
+
+.gt-setButbg{
+     width: 20px;
+    height: 20px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    position:absolute;
+    text-align: center;
+    display: inline-block;
+    top:10px;
+    left: 15px;
+  
+}
+.gt-setButBlbg{
+   
+   background-color: #01aaed;
+   border-color: #01aaed;
+  
+}
+.gt-SetbutCall{
+    width: 14px;
+    height: 14px;
+    top:3px;
+    left: 4px;
+  background-image: url('../img/ico/u760.png');
+    background-size: 14px 14px;
+    position: absolute;
+}
+.gt-setButbg:hover{
+    border-color: #01aaed;
+}
+
+.gt-tabHerad{
+        width: 198px;
+    height: 40px;
+    background: inherit;
+    background-color: rgba(242, 242, 242, 1);
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    line-height: 40px;
+  
+   
+}
+.gt-ClorTp{
+        color: #FD7768;
+}
+.gt-Mglft{
+    margin-left: 20px;
+}
+.gt-delImg{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+ .gt-delImg img{
+ width: 24px;
+    height: 24px;
+ }
+ .gt-lihBox{
+       width: 198px;
+    height: 40px;
+    background: inherit;
+   display: inline-block;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    line-height: 40px;
+     line-height: 40px;
+ }
+ .gt-chekSend{
+color: #0DC292;
+}
+.gt-chekNext{
+    width: 50px;
+text-align: center;
+margin-top: 20px;
+width: 216px;
+height: 60px;
+margin: 0 auto;
+margin-top: 20px;
+
+
+}
+.gt-chekNext span {
+display: inline-block;
+width: 40px;
+height: 30px;
+line-height: 30px;
+ border: 1px solid #e4e4e4;
+font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+
+}
+.gt-chekbg:hover{
+
+    background: #f0f0f1;
+    cursor: pointer; 
+}
+.gt-chekNext .gt-chekBlu{
+    color: white;
+     background-color: rgba(1, 170, 237, 1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(13, 194, 146, 1);
+}
+.gt-clickDate span{
+    cursor: pointer;
+}
+.gt-roomdSpan{
+cursor: pointer;
+}
+.gt-entRig{
+  display: inline-block;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e4e4e4;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    background-color:rgba(1, 170, 237, 1);
+    color: white;
+    cursor: pointer;
+}
+
+ /*表格*/
+
+.gt-bas{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-weight: 400;
+    font-style: normal;
+        color: #333333;
+  font-size: 14px;
+}
+
+.gt-bas td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-bas tbody tr:nth-child(odd) td {background-color: #ffffff; }
+/*偶数行*/
+.gt-bas tbody tr:nth-child(even) td {  background-color: #f2f2f2;}
+
+/*报名活动列表*/
+ .gt-bast{
+width: 100%;
+}
+
+
+.gt-bas tbody tr:hover td { background-color: #f0f0f1; }
+
+.gt-setButnew{
+    top:-2px;
+    left: 0px;
+}
+.gt-deltan{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    background-color: #fff;
+    width: 320px;
+    height: 200px;
+    z-index: 101;
+}
+.gt-deltanHr{
+    width: 100%;
+    height: 42px;
+    background-color: rgba(248, 248, 248, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(238, 238, 238, 1);
+}
+.gt-noce{
+    float: left;
+    line-height: 42px;
+    margin-left: 8px;
+}
+.gt-noceBut{
+    width: 80%;
+    height: 90px;
+     margin: 0 auto;
+    text-align: center;
+    line-height: 90px;
+}
+.gt-BuntComm{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.gt-but1{
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color:#0dc292; 
+    margin-right: 20px;
+    cursor: pointer;
+}
+.gt-but2{
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    width: 60px;
+    height: 32px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(201, 201, 201, 1);
+    border-radius: 2px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #353535;
+    cursor: pointer;
+
+}

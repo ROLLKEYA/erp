@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+   <link rel="stylesheet" href="../css/timetable.css">
+</head>
+<body>
+ <div class="gt-bigBox">
+
+<div class="gt-bgd">
+   <div class="gt-backDiv">
+
+<p> <span class="gt-backCur"><span>前台营业 > </span> <span class="gt-backBlu ">课表和点名</span></span> <span class="gt-backSp">返回</span> </p>
+      </div>
+<div class="gt-deails" style="display:block">
+
+       <!--学员信息-->
+      
+     
+
+    
+      <div class="gt-callNameBox">
+
+<div class="gt-MIS" style="display:block">
+        
+ <!--头部信息-->
+ <div class="gt-heardInfor">
+
+   <ul>
+       <li>总教室间数 : <span>403</span></li>
+       <li>上课中 : <span>201</span></li>
+       <li>空闲 : <span>403</span></li>
+         
+       </ul>
+
+ </div>
+ <div class="gt-timeDte"><span>选择日期 ：</span> <input id='gt-tableInput' type="date"></div>
+<!--表格-->
+ <div class="gt-tableHeard"><span>教室（201）2017-03-14课表：</span></div>         
+<div class="gt-Elist">
+<table  class="gt-enrotabl">
+     
+                 <tbody id='gt-table1'>
+                       
+                 </tbody>
+               
+
+
+                    </table>
+
+                    
+        </div>
+   <div id='gt-Page' class="gt-flort">
+  <div class="gt-paging"><span  id='gt-homePg1'class=" gt-HoverclikBackg gt-clikBackg">1</span> 
+      <span class="gt-HoverclikBackg" id='gt-showPg1'>0</span> 
+      <span class="gt-Next gt-HoverclikBackg" id='gt-nextPg1'><img src="../image/ico/u565.png" alt=""></span></div>
+</div>
+
+    </div>
+
+
+
+
+
+      </div>
+      </div>
+ </div> 
+       
+
+                 
+</div>
+
+<!--上课签到-->
+<div class="gt-signed" style="display:none">
+<div class="gt-singedHeader"><span class="gt-haveSign">上课签到</span> <span class="gt-sigedImg"><img src="../image/ico/u2527.png" alt=""></span></div>
+<div class="gt-signedUl"> <ul>
+      <li>班级名称 : <span id='gt-className'></span></li>
+      <li>班级总人数 : <span id='gt-howPeplo'></span><span>人</span></li>
+       
+      </ul></div>
+      <div class="gt-signedLine"><img src="../image/ico/u8436.png" alt=""></div>
+<div class="gt-spuare">
+      <ul>
+            <li><span class="gt-bulespuare"></span> 已签到</li>
+            <li><span class="gt-greyespuare"></span> 未到</li>
+            <li><span class="gt-redspuare"></span> 已请假</li>
+            <li class="gt-spuareRt">未到学员 : <span id='gt-notCome'></span><span  class="gt-peploRty">人</span><span class="gt-message">发短信通知</span></li>
+      </ul>
+      </div>
+
+     <div class="gt-studenList">
+
+   <ul id='gt-table2'>
+     
+
+
+      </ul>
+
+</div>
+
+</div>
+
+            <div id='gt-singList' class="gt-signedNew" style="display:none">
+            <div class="gt-singedHeader"><span class="gt-haveSign">学员状态</span> <span class="gt-sigedImgds"><img src="../image/ico/u2527.png" alt=""></span></div>
+              
+                  <div class="gt-boxsingge">
+                         <span  id='gt-singgeId'class="gt-singge">签到</span>  <span id='gt-hWork' class="gt-haswork">请假</span>
+                  </div>
+
+            </div>
+
+     
+
+       <!--课表点名-->
+                         <script type="text/template" id="table1">
+                          
+                     <tr>
+                          <td class="gt-Edatli0 "> 班级名称 </td>
+                          <td class="gt-Edatli1">课程名称</td>
+                          <td  class="gt-Edatli2">教室名称</td>
+                          <td class="gt-Edatli3">上课老师</td>
+                          <td class="gt-Edatli4">上课时间</td>
+                          
+                          <!-- <td class="gt-Edatli5">状态</td> -->
+                          <td  class="gt-Edatli6">操作</td>
+                           
+                    </tr>
+                      <% for(var i=0,len=list.length; i<len; i++) { %>
+                  <tr>
+                          <td class="gt-Edatli0 "> <%=list[i].teamName%> </td>
+                          <td class="gt-Edatli1"><%=list[i].className%>(<%=list[i].levelName%>)</td>
+                           <td  class="gt-Edatli2"><%=list[i].classroomName%></td>
+                          <td class="gt-Edatli3"><%=list[i].employeesName%></td>
+                          <td class="gt-Edatli4"><%=list[i].startDate%>~<%=list[i].endDate%></td>
+                         
+                           <!-- <td class="gt-Edatli5">上课中</td> -->
+                          <td  class="gt-Edatli6">
+                                <span 
+                                 class="gt-sign" 
+                                 data-id='<%=list[i].id%>' 
+                                 data-teamname='<%=list[i].teamName%>' 
+                                 data-teamid='<%=list[i].teamId%>' 
+                                 data-classionid='<%=list[i].classSonId%>' 
+                                 
+                                 >上课签到</span>
+                              
+                              </td>
+                           
+                    </tr>
+                      <% } %>
+                                
+                      </script>
+
+                      <!--课表点名-->
+                         <script type="text/template" id="table2">
+                  
+                       <% for(var i=0,len=list.length; i<len; i++) { %>   
+                      <li>
+
+                        <div data-id='<%=list[i].id%>' data-status ='<%=list[i].status%>' class="gt-smallSpuer "> 
+                        <div class="gt-centrnTop"><span><%=list[i].studentNo%></span></div>
+                        <div><span><%=list[i].studentName%></span></div>
+                        </div>
+                 </li>
+               <% } %>
+     
+                         
+                      </script>
+
+<div class="gt-trans" style="display:none"></div>
+<div class="gt-trans2" style="display:none"></div>
+
+ <script src="../js/common/jquery-1.8.3.js"></script>
+  <script src="../js/common/underscore-min.js"> </script>
+ <script src="../js/common/common.js"> </script>
+ <script src="../js/timetable/timetable.js"></script>
+ 
+</body>
+</html>

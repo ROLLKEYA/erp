@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+      <link type="text/css" rel="stylesheet" href="../css/common/admin.css" />
+     <link rel="stylesheet" type="text/css" href="../css/common/jquery-ui.css" /> 
+     <link rel="stylesheet" type="text/css" href="../css/common/list.css" /> 
+
+   <link rel="stylesheet" href="../css/information.css">
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ui.datepicker-zh-CN.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-timepicker-zh-CN.js"></script>
+</head>
+<body>
+ <div class="gt-bigBox">
+
+<div class="gt-bgd">
+    <!--左侧导航栏-->
+    <div class="gt-backDiv">
+
+<p> <span class="gt-backCur"><span>前台营业 > </span> <span class="gt-backBlu">信息管理</span></span> <span class="gt-backSp">退出</span> </p>
+      </div>
+<!--前台页面学员报名项-->
+<div class="gt-deails" style="display:block">
+
+       <!--学员信息-->
+      
+
+    
+      <div class="gt-StuAdminiBox">
+<div class="gt-StuAdmini"> <span id="gt-StuIfromtion" class="gt-StuIfromtion gt-clikStyl ">学员信息管理</span> </div>
+  <!--学员信息管理 小项-->
+
+<div class="gt-MIS" style="display:block">
+        
+    <div class="gt-StuInformation"> 
+    <div class="gt-StuDiv"><span >在读学员总数： </span><span class="gt-colorSpan">964</span>  <span class="gt-StuLf">历史学员(已结业)： </span> <span class="gt-colorSpan">200</span></div>
+    <div class="gt-StuDiv"><span>未分班： </span><span>9</span> <span class="gt-StuMgriLf">在读： </span> <span>905</span> <span class="gt-StuMgriLf">停课： </span><span>31</span> <span class="gt-StuMgriLf">已退学： </span> <span>19</span></div>
+    
+</div>
+
+  <div class="gt-prSe ">
+           <span class="gt-prSearc gt-ctrol"> 
+               <input id='gt-input1' type="text" placeholder="学员姓名/学号/联系电话">
+                <span id='gt-searc1'class="gt-prSearcA"> <img src="../image/ico/u544.png" alt=""></span>
+             </span>  
+               <span>选择老师：
+                  <span  class="gt-ClsectA">             
+                     <select name="" id="" class="gt-ClsectAa">
+                        <option value="">&nbsp &nbsp赵大川</option>
+                        <option value=""> &nbsp &nbsp赵华</option>
+                        <option value=""> &nbsp &nbsp汾阳</option>
+                     </select>         
+                  </span> 
+                </span> 
+                 <span class="gt-dateTime">
+                  <span>入学时间:</span><input type="date">
+                 </span>
+    </div>
+
+<!--表格-->
+             
+<div class="gt-Elist">
+
+           <table  class="gt-enrotabl">
+                 <tbody id='gt-table1'>
+                     
+                 </tbody>
+                    
+                    </table>
+
+                    
+        </div>
+        <div class="gt-Flort">
+ <div class="gt-paging"><span class=" gt-HoverclikBackg gt-clikBackg" id='gt-homePg1'>1</span> <span class="gt-HoverclikBackg gt-curText" id='gt-showPg1'>2</span>  <span id='gt-nextPg1'class="gt-Next gt-HoverclikBackg"><img src="../image/ico/u565.png" alt=""></span></div>
+        </div>
+ 
+    </div>
+
+ 
+      </div>
+
+
+
+  
+      </div>
+
+
+ </div> 
+
+                 
+</div>
+<!--防止点击背景-->
+<div class="gt-backgImg gt-onClick gt-trans" style="display:none"></div>
+<div>
+<!--修改信息-->
+        <div  id='gt-revisions' class="gt-revisions gt-onClick" style="display:none"> </div> 
+    
+<!--分班-->
+<div id='gt-divideCl' class="gt-divideCl gt-onClick" style="display:none">
+  <div class="gt-revisionsHeard"> <span class="gt-NameCar" id='gt-sduten-deail'><span>00256-尹海波</span> <span>(分班)</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+ <div class="gt-divideDiv"><span class="gt-multidMargi">已报课程 : </span>
+        <span  class="gt-rveYear gt-multid gt-divideLong">             
+            <select name="" id="gt-rveYearSlec" class="gt-rveYearSlec ">
+                   
+                    
+                </select>
+        </span>
+</div>
+<!--直线线型-->
+<div class="gt-backgrongLine"> <img src="../image/ico/u8264.png" alt=""> </div>
+
+<div id='gt-divTables'></div>
+
+</div>
+
+
+<!--转班-->
+<div id="gt-transfe" class="gt-divideCl gt-onClick" style="display:none">
+                       
+<div class="gt-revisionsHeard"> <span class="gt-NameCar"><span class="gt-classNameAnd" >00256-尹海波</span> <span>(转班)</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+ <div class="gt-divideDiv" ><span class="gt-multidMargi">已报课程 : </span>
+         <span  class="gt-rveYear gt-multid gt-divideLong">             
+            <select name="" id='gt-hasClass' class="gt-rveYearSlec ">
+               
+                    
+                    
+                </select>
+        </span> 
+</div>
+<!--直线线型-->
+<div class="gt-backgrongLine"> <img src="../image/ico/u8264.png" alt=""> </div>
+<div id='gt-table6'>
+
+      
+</div>
+
+</div>
+
+<!--出勤情况-->
+<div id='gt-attendance' class="gt-attendance gt-onClick" style="display:none">
+<div class="gt-revisionsHeard"> <span class="gt-NameCar"><span class="gt-classNameAnd">00256-尹海波</span> <span>(出勤情况)</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+<div id='gt-attend'></div>
+
+</div>
+ 
+<!--转班记录-->
+<div id='gt-tranNotes' class="gt-attendance gt-onClick" style="display:none">
+<div class="gt-revisionsHeard"> <span class="gt-NameCar"><span class="gt-classNameAnd">00256-尹海波</span> <span>(转班情况)</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+<div class="gt-atteDate"> <span> 查看日期 ：</span> <input type="date"></div>
+ <div id='gt-tranNotesList'>
+
+ </div>
+
+</div>
+
+<!--停课-->
+
+<div id='gt-stopClass' class="gt-suspended gt-onClick" style="display:none">
+
+<div class="gt-revisionsHeard "> <span class="gt-NameCar"><span class="gt-classNameAnd">00256-尹海波</span> <span>(停课)</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+
+<div id='gt-table8'></div>
+
+</div>
+
+<!--复课-->
+
+<div id='gt-reopened' class="gt-suspended gt-onClick" style="display:none">
+
+<div class="gt-revisionsHeard "> <span class="gt-NameCar"><span  class="gt-classNameAnd">00256-尹海波</span> <span>(复课)</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+
+<div id='gt-table9'></div>
+</div>
+
+<!--退课-->
+<div id='gt-dropOut' class="gt-reopened gt-onClick" style="display:none">
+<div class="gt-revisionsHeard gt-reopenedHeard "> <span class="gt-NameCar"><span>提示</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+<div class="gt-reopenedCenter"><span>确定要退学吗？</span></div>
+<div  class="gt-reopenedChose">  <span class="gt-confirm" id='gt-leave'>确定</span> <span class="gt-cancelled">取消</span></div>  
+</div>
+</div>
+
+<!--学员档案下的 档案详情-->
+
+     <div id='gt-table2' class="gt-detailList" style="display:none"> </div>
+                               
+
+     
+                                    <!--学员信息管理-->
+
+                <script type="text/template" id="table1">
+                        <tr class="gt-dataTr">
+                          <td class="gt-Edatli0 gt-onClick"> <span class="gt-chosChang">来源 <span class="gt-ImgIco"> <img src="../image/ico/u2448w.png" alt=""></span>
+                                    <!-- <ul> 
+                                               <li>微信</li>
+                                                <li>前台</li>
+                                              
+                                     </ul> -->
+
+                         </span>
+                          </td>
+                          <td class="gt-Edatli1">学号</td>
+                          <td class="gt-Edatli2">姓名</td>
+                          <td class="gt-Edatli3">性别</td>
+                          <td  class="gt-Edatli4">联系电话</td>
+                           <!-- <td class="gt-Edatli5">班级</td> -->
+                           <td  class="gt-Edatli6 gt-onClick "> 状态
+                               <!-- <span class="gt-chosChang" >状态<span class=" gt-ImgIco gt-ImgIco2 "> <img src="../image/ico/u2448w.png" alt=""></span>
+                                    <ul> 
+                                               <li>未分班</li>
+                                                <li>在读</li>
+                                             
+                                     </ul>
+                                        </span> -->
+                           </td>
+                           <td class="gt-Edatli6">操作</td>
+                    </tr>
+                          <% for(var i=0,len=list.length; i<len; i++) { %>
+                       <tr class="gt-dataTr">
+                          <td data-trom="<%=list[i].from%>" class="gt-Edatli0 gt-form"> </td>
+                          <td class="gt-Edatli1"><%=list[i].studentNo%></td>
+                          <td class="gt-Edatli2"><%=list[i].studentName %></td>
+                          <td data-sex='<%=list[i].sex%>' class="gt-Edatli3 gt-Boxsex">  </td>
+                          <td  class="gt-Edatli4"><%=list[i].studentPhone %></td>
+                           <!-- <td class="gt-Edatli5"></td> -->
+                           <td data-overdue="<%=list[i].overdue%>" class="gt-Edatli6 gt-overdue "><%=list[i].overdue%></td>
+                           <td title='' class="gt-Edatli7 ">
+                                <div class="gt-cheques gt-chequImg"><span>操作</span></div>
+                                <!--操作界面-->
+                                <div class="gt-convInter ">
+                                  <ul data-sex='<%=list[i].sex%>'   data-studentno='<%=list[i].studentNo%>' data-studentname='<%=list[i].studentName%>' data-id='<%=list[i].id %>' data-overdue="<%=list[i].overdue%>" class='gt-tableUl' >
+                                     
+                                  </ul>
+
+                                </div>  
+                        </td>
+                    </tr>   
+                    <% } %>
+                        
+                      </script>
+
+                  
+                                         <!--详情信息管理-->
+
+                <script type="text/template" id="table2">
+                       
+                         <div class="gt-revisionsHeard"> <span class="gt-NameCar"><span><%=list.studentNo%>-<%=list.studentName%></span> <span>(档案详情)</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+       
+                      <div class="gt-revList">
+
+                     <table  class="gt-revListtabl">
+                 <table  class="gt-revListtabl">
+                  <tr>
+                          <td class="gt-revli0">班级名称  </td>
+                          <td class="gt-revli1">课程名称</td>
+                          <td class="gt-revli2">上课老师</td>
+                          <td class="gt-revli3">班主任</td>
+                          <td  class="gt-revli4">默认教室</td>
+                           <td class="gt-revli5">以上课次</td>
+                           <td class="gt-revli6">开班日期</td>
+                    </tr>
+                          <% for(var i=0,len=list.classPins.length; i<len; i++) { %>
+                    <tr>
+                          <td class="gt-revli0"><%=list.classPins[i].teamName%></td>
+                          <td class="gt-revli1"><%=list.classPins[i].className%>(<%=list.classPins[i].levelName%>)</td>
+                          <td class="gt-revli2"><%=list.classPins[i].employeesName%></td>
+                          <td class="gt-revli3"><%=list.classPins[i].teamName%></td>
+                          <td  class="gt-revli4"><%=list.classPins[i].classroomName%></td>
+                           <td class="gt-revli5"><%=list.classPins[i].pastClassCount%>/<%=list.classPins[i].allClassCount%>次</td>
+                           <td class="gt-revli6"><%=list.classPins[i].startDate%></td>
+                    </tr>
+                  <% } %> 
+                    </table>
+
+                  
+      
+                    
+        </div>
+
+<!--线型--> 
+<div class="gt-backgrongLine"> <img src="../image/ico/u8264.png" alt=""> </div>
+
+                        <div class="gt-detaildata">
+                        <ul class="gt-detaUlLf">
+                              <li>姓名 :<%=list.studentName%></li>
+                              <li>就读学校 : <span><%=list.school%></span> </li>
+                              <li>性别 ：<span data-sex='<%=list.sex%>' class='gt-sexList'></span></li>
+                              <li> 邮箱 ：<span><%=list.email%></span></li>
+                        </ul>
+
+                        <ul class="gt-detaUlRg">
+                              <li>学号 : <span><%=list.studentNo%></span></li>
+                              <li>联系电话 : <span><%=list.studentPhone%></span> </li>
+                              <li>年级 ：<span><%=list.gradeName%></span></li>
+                              <li> 推荐人(码) ：<span><%=list.recommendCode%></span></li>
+                        </ul>
+
+                        </div>
+                        
+                        <div>
+                        <ul class="gt-analysed">
+                          <% for(var i=0,len=list.analysis.length; i<len; i++) { %>
+                              <li> 学科分析 ：
+                                 
+                                    <span ><%=list.analysis[i].subjectName %></span><span class='gt-galdCade'>(<%=list.analysis[i].score%>)</span></li>
+                                        <% } %> 
+                              <li>家庭地址 : <span><%=list.address%></span></li>
+                              <li>学情分析 : <%=list.studentAnalysis%></li>
+                                    
+                              </ul>
+
+                        </div>
+                              
+                              <div class="gt-backgrongLine"> <img src="../image/ico/u8264.png" alt=""> </div>
+                         <div id='gt-deailBox'></div>
+                      </script>
+                        
+
+
+                                      <!--修改信息-->
+
+                <script type="text/template" id="table3">
+
+                   <div class="gt-revisionsHeard"> <span class="gt-NameCar"><span><%=list.studentNo%>-<%=list.studentName%></span> <span>(修改信息)</span></span> <span class="gt-canl"><img src="../image/ico/u2527.png" alt=""></span></div>
+       
+               <div class="gt-revList">
+
+               <table  class="gt-revListtabl" id='gt-changeTable'>
+                  <tr>
+                          <td class="gt-revli0">班级名称  </td>
+                          <td class="gt-revli1">课程名称</td>
+                          <td class="gt-revli2">上课老师</td>
+                          <td class="gt-revli3">班主任</td>
+                          <td  class="gt-revli4">默认教室</td>
+                           <td class="gt-revli5">以上课次</td>
+                           <td class="gt-revli6">开班日期</td>
+                    </tr>
+           <% for(var i=0,len=list.classPins.length; i<len; i++) { %>
+                    <tr>
+                          <td  class="gt-revli0 gt-gald"><%=list.classPins[i].teamName%></td>
+                          <td class="gt-revli1 "><%=list.classPins[i].className%>(<%=list.classPins[i].levelName%>)</td>
+                          <td class="gt-revli2"><%=list.classPins[i].employeesName%></td>
+                          <td class="gt-revli3"><%=list.classPins[i].teamName%></td>
+                          <td  class="gt-revli4"><%=list.classPins[i].classroomName%></td>
+                           <td class="gt-revli5"><%=list.classPins[i].pastClassCount%>/<%=list.classPins[i].allClassCount%>次</td>
+                           <td class="gt-revli6"><%=list.classPins[i].startDate%></td>
+                    </tr>
+                <% } %> 
+                    </table>
+
+                    
+        </div>
+<!--线型--> 
+<div class="gt-backgrongLine"> <img src="../image/ico/u8264.png" alt=""> </div>
+
+        <div class="gt-revBox">
+     <div class="gt-perDiv"> 
+        <span>姓名 : </span> <span class="gt-perSpan"><input type="text" id='gt-IFinput1' value='<%=list.studentName%>'></span> 
+        <span class="gt-revLfet">学号 : </span> <span class="gt-perSpan gt-revbackg"> <%=list.studentNo%></span> 
+   
+  </div>
+    <div class="gt-perDiv gt-revSchloo"> 
+        <span>就读学校 : </span> <span class="gt-perSpan"><input  id='gt-IFinput2' value='<%=list.school%>' type="text"></span> 
+        <span class="gt-magiLfet">联系电话 : </span> <span class="gt-perSpan"> <input  id='gt-IFinput3' value='<%=list.studentPhone%>' type="text"></span> 
+   
+  </div>
+
+  <div class="gt-perDiv"> 
+    <span id='gt-sex'class="gt-sex" data-sex='<%=list.sex%>'>性别 :  <div id='gt-man'class="gt-man"><div class="gt-round gt-roundRad"><span class="gt-roundSpan"></div> <span class="gt-manSpan">男</span></div>
+     <div id='gt-woman' class="gt-woman"><div class="gt-round gt-roundRB"> <span class="gt-roundSpan"></span></div> <span class="gt-womanSpan">女</span></div>
+    <span class="gt-year ">年级 ：<span  class="gt-rveYear">             
+                     <select name="" data-gradeid='<%=list.gradeId%>' id="gt-grade2" class="gt-rveYearSlec">
+                      
+                       
+                     </select>         
+                  </span> 
+                </span> 
+  </div>
+
+  <div class="gt-perDiv"> 
+        <span>邮箱 : </span> <span class="gt-perSpan"><input  id='gt-IFinput4' value='<%=list.email%>' type="text"></span> 
+        <span class="gt-reference">推荐人(码) : </span> <span class="gt-perSpan  gt-revbackg"> <%=list.recommendCode%> </span> 
+   
+  </div>
+
+  <div id='gt-listDatepre' class="gt-perDiv  gt-multidMargi">
+
+  <div id='gt-BoxsubList' >
+        <span class="gt-sjecode">科目 : </span> 
+               <div class='gt-QsbjBox'>
+
+                       <% for(var i=0,len=list.analysis.length; i<len; i++) { %>
+      <div class='gt-sbjLtse'>
+     
+      <span  class="gt-rveYear gt-multid">             
+       <select data-id='<%=list.analysis[i].id%>' name=""  class="gt-rveYearSlec gt-IFsubject gt-subjects">
+         
+        </select>
+</span>
+<input  class="gt-textInput"   data-val='<%=list.analysis[i].score%>' type="text" data-id='<%=list.analysis[i].subjectId%>' value='<%=list.analysis[i].score%>' > 
+<span>分</span><div  class='gt-delfater'><span>点击删除</span></div>  
+</div>
+ <% } %>
+
+   <div id='gt-addgt-BoxsubList'></div>
+
+               </div>
+  </div>
+
+</div>
+
+<div  class="gt-addSct"><span id='gt-addSeb'>添加科目</span></div>
+<div class="gt-address"><span>家庭住址 : </span> <input id='gt-IFinput6' type="text" value='<%=list.address%>'></div>
+
+<div class="gt-study"><span class="gt-textdailSpan">学情分析 : </span> <textarea id='gt-IFinput7' value='<%=list.studentAnalysis%>' class="gt-textdail" rows="2" cols="30"><%=list.studentAnalysis%></textarea></div>
+
+<!--线型--> 
+<div class="gt-backgrongLine"> <img src="../image/ico/u8264.png" alt=""> </div>
+      <!-- 家长1关系
+       -->
+
+         <div id='gt-prens'></div>
+         <div id='gt-IFprent'></div>
+         <div  class="gt-addSct"><span id='gt-IFaddprent'>添加家长</span></div>
+                 <div id='gt-sexdata'class='gt-datedom'>  </div>
+<div class="gt-button"><div id='gt-IfaddStudents' class="gt-addStudents gt-nextBut "><span>保存</span> </div> <div id='gt-canLive' class="gt-addStudents gt-cancelBut"><span>取消</span></div></div>
+
+
+</div>
+
+                        
+                      </script>
+
+                 
+                                                   <!--分班-->
+
+                <script type="text/template" id="table4">
+
+
+                                        
+<!--表-->
+<div class="gt-divideList">
+
+<table  class="gt-dividetabl">
+           <tbody>
+                
+          <tr>
+                            <td class="gt-divide0"> </td>
+                            <td class="gt-divide1">班级名称</td>
+                            <td class="gt-divide2">上课老师</td>
+                            <!-- <td class="gt-divide3">班班主任</td> -->
+                            <td  class="gt-divide4">默认教室</td>
+                            <!-- <td class="gt-divide5">已上课次</td> -->
+                            <td class="gt-divide6">开班日期</td>
+                        </tr>
+                    <% for(var i=0,len=list.length; i<len; i++) { %>
+                        <tr>
+                          <td  class="gt-divide0"> <div class="gt-square "><span> </span></div> </td>
+                          <td data-id="<%=list[i].id%>" class="gt-divide1"><%=list[i].teamName%></td>
+                          <td class="gt-divide2"><%=list[i].employeesName%></td>
+                          <!-- <td class="gt-divide3"><%=list[i].employeesName%></td> -->
+                          <td  class="gt-divide4"><%=list[i].classroomName%></td>
+                           <!-- <td class="gt-divide5">0/10次</td> -->
+                           <td class="gt-divide6"><%=list[i].startDate%></td>
+                    </tr>
+                      <% } %>   
+      
+           </tbody>        
+</table>
+        </div>
+        
+             <div class="gt-chekNext">
+                 <span class="gt-chekBlu gt-hoverSpan" id='gt-homepg'>1</span><span class="gt-hoverSpan gt-Nopinter" id='gt-showpg'>2</span><span class="gt-chekPre gt-hoverSpan" id='gt-nextpg'><img src="../image/ico/u565.png" alt=""></span>
+                 
+            </div>
+
+            <div class="gt-haveChosen">
+                 <div class="gt-haveChoseDiv"> <span >已选择 : </span><span id='gt-choseHas'> </span></div>      <div  class="gt-haveChoseDivA">  <span id='gt-suer-confirm' class="gt-confirm">确定</span> <span class="gt-cancelled">取消</span></div>    
+
+            </div>
+
+
+
+   
+                      </script>
+                                                      <!--转班-->
+
+                <script type="text/template" id="table6">
+
+
+<!--表-->
+<div class="gt-divideList">
+
+<table  class="gt-dividetabl">
+        <tbody >    
+                <tr>
+                            <td class="gt-divide0"> </td>
+                            <td class="gt-divide1">班级名称</td>
+                            <td class="gt-divide2">上课老师</td>
+                            <!-- <td class="gt-divide3">班班主任</td> -->
+                            <td  class="gt-divide4">默认教室</td>
+                            <!-- <td class="gt-divide5">已上课次</td> -->
+                            <td class="gt-divide6">开班日期</td>
+                        </tr>
+               <% for(var i=0,len=list.length; i<len; i++) { %>
+                        <tr>
+                          <td  class="gt-divide0"> <div class="gt-square "><span> </span></div> </td>
+                          <td data-id="<%=list[i].id%>" class="gt-divide1 gt-haveBeen" ><%=list[i].teamName%></td>
+                          <td class="gt-divide2"><%=list[i].employeesName%></td>
+                          <!-- <td class="gt-divide3"><%=list[i].employeesName%></td> -->
+                          <td  class="gt-divide4"><%=list[i].classroomName%></td>
+                           <!-- <td class="gt-divide5">0/10次</td> -->
+                           <td class="gt-divide6"><%=list[i].startDate%></td>
+                    </tr>
+                      <% } %>   
+   
+                 </tbody>
+   </table>
+       
+        </div>
+        
+             <div class="gt-chekNext">
+                  <span class="gt-chekBlu gt-hoverSpan" id='gt-homepg2'>1</span><span class="gt-hoverSpan gt-Nopinter" id='gt-showpg2'>2</span><span class="gt-chekPre gt-hoverSpan" id='gt-nextpg2'><img src="../image/ico/u565.png" alt=""></span>
+                 
+            </div>
+
+            <div class="gt-haveChosen">
+                 <div class="gt-haveChoseDiv"> <span >已选择 : </span><span id='gt-transfer'></span></div> <div  class="gt-haveChoseDivA">  <span id='gt-yesSure' class="gt-confirm">确定</span> <span class="gt-cancelled">取消</span></div>    
+
+            </div>
+
+
+                      </script>
+
+                         <!--出勤-->
+
+                <script type="text/template" id="table7">
+
+<div class="gt-atteDate"> <span> 查看日期 ：</span> <input type="date"></div>
+
+
+<div class="gt-atte">
+
+<table  class="gt-attetabl">
+      <tbody >
+                  <tr class="gt-dataTr">
+                          <td class="gt-atteli0">班级名称
+                              <!--  <span class="gt-atteImgIco"> <img src="../image/ico/u2448w.png" alt=""></span> -->
+                                    <!-- <ul> 
+                                               <li>小提琴6班</li>
+                                               <li>小提琴5班</li>
+                                                <li>小提琴4班</li>
+                                                <li>小提琴3班</li>
+                                     </ul> -->
+
+
+                          </td>
+                          <td class="gt-atteli1">课程名称
+                              <!-- <span class="gt-atteImgIco"> <img src="../image/ico/u2448w.png" alt=""></span>
+                                    <ul> 
+                                               <li>小提琴6班</li>
+                                               <li>小提琴5班</li>
+                                                <li>小提琴4班</li>
+                                                <li>小提琴3班</li>
+                                     </ul> -->
+                          </td>
+                          <td class="gt-atteli2">上课时间</td>
+                          <td class="gt-atteli3">出勤情况</td>
+                                     
+                          
+                    </tr>
+                <% for(var i=0,len=list.length; i<len; i++) { %>
+               <tr class="gt-dataTr">
+                          <td class="gt-atteli0"><%=list[i].teamName%> </td>
+                          <td class="gt-atteli1"><%=list[i].className%>(<%=list[i].levelName%>) </td>
+                          <td class="gt-atteli2"><%=list[i].startDate%>~<%=list[i].endDate%></td>
+                          <td  data-status='<%=list[i].status%>' class="gt-atteli3 gt-list"></td>
+                                     
+                          
+                    </tr>
+                        <% } %>        
+                    </tbody>
+                    </table>
+
+                    
+        </div>
+         <div class="gt-chekNext gt-atteChekNext">
+                 <span class="gt-chekBlu gt-hoverSpan" id='gt-homePg4'>1</span><span class=" gt-hoverSpan gt-Nopinter" id='gt-homeShow4'>2</span><span id='gt-nextPg4' class="gt-chekPre gt-hoverSpan"><img src="../image/ico/u565.png" alt=""></span>
+                 
+            </div>
+                      </script>
+
+                                         <!--转班记录-->
+
+                <script type="text/template" id="table10">
+
+
+<div class="gt-atte">
+
+<table  class="gt-attetabl">
+       <tbody>
+                  <tr class="gt-dataTr">
+                          <td class="gt-atteli0">转班时间 </td>
+                          <td class="gt-atteli1">转出班级 </td>
+                          <td class="gt-atteli2">转入班级</td>
+                          <!-- <td class="gt-atteli3">操作人</td>
+                                      -->
+                          
+                    </tr>
+                   <% for(var i=0,len=list.length; i<len; i++) { %>
+               <tr class="gt-dataTr">
+                          <td class="gt-atteli0"><%=list[i].updateDate%> </td>
+                          <td class="gt-atteli1"><%=list[i].outTeamName%> </td>
+                          <td class="gt-atteli2"><%=list[i].inTeamName%></td>
+                          <!-- <td class="gt-atteli3"><%=list[i].teamName%></td> -->
+                                     
+                    </tr>
+                             <% } %>        
+        </tbody>
+                    </table>
+
+                    
+        </div>
+         <div class="gt-chekNext gt-atteChekNext">
+                 <span class="gt-chekBlu gt-hoverSpan" id='gt-homePg3'>1</span><span class=" gt-hoverSpan" id='gt-showPg3'>2</span><span id='gt-nextPg3' class="gt-chekPre gt-hoverSpan"><img src="../image/ico/u565.png" alt=""></span>
+                 
+            </div>
+       </script>
+
+                                         <!--停课-->
+
+                <script type="text/template" id="table8">
+
+
+<!--表-->
+<div class="gt-suspList">
+
+<table  class="gt-susptabl">
+                    <tr>
+                            <td class="gt-suspli0"> </td>
+                            <td class="gt-suspli1">班级名称</td>
+                            <td class="gt-suspli2">上课名称</td>
+                            <td class="gt-suspli3">当前状态</td>
+                            <td  class="gt-suspli4">停课记录</td>
+                            
+                        </tr>
+
+                            <% for(var i=0,len=list.length; i<len; i++) { %>
+                   <tr>
+                          <td class="gt-suspli0"> <div class="gt-square "><span> </span></div> </td>
+                          <td  class="gt-suspli1"><%=list[i].teamName%></td>
+                          <td data-id= <%=list[i].id%>  class="gt-suspli2"><%=list[i].className%>(<%=list[i].levelName%>)</td>
+                          <td data-status='<%=list[i].status%>' class="gt-suspli3 gt-list"></td>
+                          <td  class="gt-suspli4"><span><%=list[i].closed%></span></td>
+                          
+                    </tr>
+                     <% } %>   
+
+                    
+                
+                    </table>
+       
+        </div>
+        
+
+            <div class="gt-haveChosen gt-haveSuspended">
+                 <div class="gt-haveChoseDiv"> <span  >已选择 : </span><span id='gt-hasclass2'></span></div>      <div  class="gt-haveChoseDivA">  <span id='gt-choosSuspended' class="gt-confirm">确定</span> <span class="gt-cancelled">取消</span></div>    
+
+            </div>
+       </script>
+    
+         
+                                         <!--复课-->
+
+                <script type="text/template" id="table9">
+
+
+
+<!--表-->
+<div class="gt-suspList">
+
+<table  class="gt-susptabl">
+                    <tr>
+                            <td class="gt-suspli0"> </td>
+                            <td class="gt-suspli1">班级名称</td>
+                            <td class="gt-suspli2">上课名称</td>
+                            <td class="gt-suspli3">当前状态</td>
+                            <td  class="gt-suspli4">停课记录</td>
+                            
+                        </tr>
+
+                   
+                            <% for(var i=0,len=list.length; i<len; i++) { %>
+                   <tr>
+                          <td class="gt-suspli0"> <div class="gt-square "><span> </span></div> </td>
+                          <td  class="gt-suspli1"><%=list[i].teamName%></td>
+                          <td data-id= <%=list[i].id%>  class="gt-suspli2"><%=list[i].className%>(<%=list[i].levelName%>)</td>
+                          <td data-status='<%=list[i].status%>' class="gt-suspli3 gt-list"></td>
+                          <td  class="gt-suspli4"><span><%=list[i].closed%></span></td>
+                          
+                    </tr>
+                     <% } %>   
+         
+                    </table>
+       
+        </div>
+        
+
+            <div class="gt-haveChosen gt-haveSuspended">
+                 <div class="gt-haveChoseDiv"> <span >已选择 : </span><span id='gt-haschooseClas'></span></div>      <div  class="gt-haveChoseDivA">  <span id='gt-reopenedSuer' class="gt-confirm">确定</span> <span class="gt-cancelled">取消</span></div>    
+
+            </div>
+
+       </script>
+
+
+  
+  <script src="../js/common/jquery-1.8.3.js"></script>
+  <script src="../js/common/common.js"> </script>
+  <script src="../js/common/underscore-min.js"> </script>
+  <script src="../js/information/information.js"></script>
+</body>
+</html>

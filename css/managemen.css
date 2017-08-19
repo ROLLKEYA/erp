@@ -1,0 +1,685 @@
+@charset "utf-8";
+	*{
+    padding:0px;
+    margin: 0px;
+    }
+    input,textarea{
+        text-indent:5px;
+    }
+
+   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #666; 
+
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #666; 
+
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+color: #666; 
+
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+color: #666; 
+
+} 
+
+    .gt-boxCentr{
+        width: 90%;
+        margin: 0 auto;
+    }
+table { 
+  border-collapse:collapse; 
+  border-spacing:0; 
+ } 
+ th,td { 
+  padding: 0; 
+  margin: 0;
+ }
+    header{
+    width:1200px;
+    height: 90px;
+
+    }
+    .gt-header-img {
+    float: left;
+    margin-left: 60px;
+    width:244px;
+    height: 90px;
+    }
+    .gt-header-img img{
+
+    width:100%;
+    height:100%;
+    }
+
+
+    .gt-select{
+    float:right;
+    width:460px;
+    height: 90px;
+    margin-right: 70px;
+    position: relative;
+    }
+
+    .gt-select .gt-select-div{
+    width:100%;
+    height: 25px;
+    text-align: center;
+
+    }
+    .gt-sc{
+    width: 48px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+        font-size: 16px
+    }
+    .gt-school{
+    width:200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+
+    }
+
+    .gt-est{
+    
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    color: white;
+    border-radius: 2px;
+    background: #02b9ff;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 3px;
+
+    }
+
+    .gt-viod{
+    display: inline-block;
+    margin-left: 3px;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background-color:rgba(252, 186, 101, 1);
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(252, 186, 101, 1);
+        border-radius: 2px;
+        font-size: 14px;
+        color: white;
+        position: relative;
+        
+    }
+
+    .gt-viod img{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top:7px;
+        left:10px;
+    }
+
+    .gt-pt{
+        position:absolute;
+        top:30px;
+        left: 0px;
+    }
+
+    /*导航菜单*/
+    /*导航菜单*/
+    nav{
+    width: 61px;
+    height: 1321px;
+    float: left;
+    background: #2f3f56;
+  position: relative;
+    }
+
+.gt-navActioan{
+width: 140px;
+height: 1282px;
+position: absolute;
+top:0;
+left: -140px;
+text-align: right;
+color: white;
+background-color: rgba(47, 64, 86, 1);
+z-index: 2;
+}
+.gt-pesonName{
+   width: 132px;
+    height: 50px;
+   text-align: right;
+   line-height: 50px;
+   font-size: 14px;
+   margin-top: 3px;
+   margin-bottom: 5px;
+   border-left:4px solid #2f4056; 
+   position: relative;
+}
+.gt-pesonName span{
+    margin-right: 15px;
+}
+.gt-pesonName img{
+margin-left: 10px;
+    padding-top: 10px;
+ width: 32px;
+height: 32px;
+float: left;
+
+}
+.gt-buttonEven {
+    width: 132px;
+    height: 50px;
+   text-align: right;
+   line-height: 50px;
+   font-size: 14px;
+   margin-top: 3px;
+   margin-bottom: 5px;
+   border-left:4px solid #2f4056;
+}
+.gt-buttonEven span{
+    margin-right: 10px;
+}
+.gt-buttonEven img{
+    margin-left: 10px;
+    padding-top: 15px;
+ width: 24px;
+height: 24px;
+float: left;
+}
+  .gt-buttonClik{
+     background-color: rgba(34, 46, 62, 1);
+     border-left: 4px solid #00cc99;
+     box-sizing: border-box;
+
+    }
+
+
+
+    .gt-bgd{
+        width: 1200px;
+        height: 1321px;
+        background-color: rgba(245, 245, 245, 1);
+        position: relative;
+
+    }
+    .gt-nav{
+
+        width: 61px;
+        height: 50px;
+        margin-bottom: 5px;
+
+    }
+.gt-nav:hover {
+ background: url('../image/ico/u7946_mouseOver.png') no-repeat;
+    background-size: 61px 50px;
+
+}
+    .gt-icoSel,.gt-icoNav{
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .gt-sel{
+        position: relative;
+      
+    }
+    .gt-navBox{
+        top:-10px;
+        left: 0px;
+        position:absolute;
+        z-index: 4;
+    }
+    /*返回按钮*/
+    .gt-pagButoon{
+        position: absolute;
+        top:400px;
+        right: -100px;
+    width: 14px;
+    height: 84px;
+    line-height: 84px;
+    text-align: center;
+    background-color: rgba(47, 64, 86, 1);
+    border: none;
+    border-radius: 4px;
+    z-index: 100;
+    }
+    .gt-pagButoon div img{
+        width: 20px;
+        height: 21px;
+    }
+    /*前进按钮*/
+    .gt-goButoon{
+         position: absolute;
+        top:400px;
+        right: -12px;
+        width: 14px;
+        height: 84px;
+        line-height: 84px;
+        text-align: center;
+        background-color: rgba(47, 64, 86, 1);
+        border: none;
+        border-radius: 4px;
+        z-index:999;
+    }
+    .gt-goButoon div img{
+        width: 20px;
+        height: 21px;
+    }
+
+    /*修改头像*/
+    .gt-edit{
+    width:120px;
+    height: 65px;
+    background: white;
+    position: absolute;
+    right: -120px;
+    top:0px;
+   display: none;
+    }
+    .gt-editBt{
+        width: 98px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-left: 10px;
+        color: #353535;
+        margin-top: 10px;
+    
+    }
+
+  .gt-editA{
+    width:120px;
+    height: 65px;
+    background: white;
+    position: absolute;
+    right: -120px;
+    top:-5px;
+   display: none;
+    }
+    .gt-editBtA{
+        width: 98px;
+        height: 40px;
+        color: #353535;
+        text-align: center;
+        line-height: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+    
+    }
+
+    /*背景变蓝*/
+    .gt-hoveBt{
+        background-color: rgba(13, 194, 146, 1);
+        color: white;
+    }
+
+    .gt-icoSel{
+        margin-top: 15px;
+        
+    }
+    .gt-icoSel img{
+
+        width: 32px;
+        height: 32px;
+
+    }
+    .gt-icoNav img{
+        width: 22px;
+        height: 22px;
+
+    }
+
+    .gt-navBlock{
+    background: url('../image/ico/u7946_mouseOver.png') no-repeat;
+    background-size: 61px 55px;
+
+    }
+
+    .gt-deails{
+        position: absolute;
+        right: 60px;
+        top: 0px;
+        width: 1012px;
+        height: 1189px;
+        
+    }
+
+
+    .gt-deails{
+        position: absolute;
+        right: 60px;
+        top: 0px;
+        width: 1012px;
+        height: 1189px;
+        
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 1135px;
+        height: 128px;
+        font-size: 12px;
+        text-align: center;
+
+    }
+    .gt-footerImg{
+    width: 1135px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    }
+    .gt-footerImg img{
+        width: 80px;
+        height: 80px;
+
+    }
+    .gt-footerIco{
+        display: inline-block;
+        width: 48px;
+        height: 15px;
+        margin-right: 30px;
+        position: relative;
+    }
+    .gt-footerIco img{
+        width: 48px;
+        height: 15px;
+        top:3px;
+        right: 0px;
+        position: absolute;
+    }
+    .gt-fotterMac{
+    margin-bottom: 6px;
+
+    }
+     /*返回*/
+    .gt-backDiv{
+    width:1012px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #353535;
+    }
+    .gt-backSp{
+    float: right;
+    width: 60px;
+    height: 30px;
+    background-color: rgba(1, 185, 254, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 185, 254, 1);
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    }
+  .gt-backBlu{
+      color: #0DC292;
+  }
+  .gt-backCur{
+  cursor:pointer; 
+  }
+
+ /*修改课程*/
+ .gt-changesBox{
+         width: 1012px;
+    height: 1109px;
+    margin-top: 20px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(238, 238, 238, 1);
+        font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+ }
+ .gt-changeListGt{
+     width: 912px;
+     margin: 0 auto;
+margin-top: 20px;
+height: 250px;
+margin-bottom: 20px;
+ }
+ .gt-alignedLf{
+     margin-top: 5px;
+     float: right;
+  margin-right: 8px;
+  display: inline-block;
+ }
+ .gt-alignedBox{
+     width: 145px;
+     display: inline-block;
+     float: left;
+ }
+ .gt-changeList ul{
+     list-style: none;
+     }
+     .gt-changeList ul li{
+    margin-top: 20px;
+     }
+     .gt-alignedIpu{
+         width: 445px;
+    height: 32px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+     }
+  /*搜索栏 下拉框*/
+.gt-selecA{
+    display: inline-block;
+    width: 180px;
+     height: 32px;
+     position: relative;
+        border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+
+}
+.gt-selecAa{
+    padding-left: 2px;
+     width: 175px;
+     height: 32px;
+     font-size: 14px;
+     line-height: 32px;
+    border:0px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background:url('../image/ico/u584.png') no-repeat right center; 
+     background-size: 15px 9px;
+}
+.gt-alignedSmall{
+        width: 120px;
+        margin-right: 20px;
+    height: 32px;
+}
+.gt-alignDate{
+    width: 145px;
+    height: 32px;
+    margin-right: 20px;
+}
+.gt-alignColor{
+        color: #FD7768;
+}
+.gt-alignLine{
+    width: 913px;
+  height: 1px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(210, 210, 210, 1);
+}
+.gt-bttonBox{
+    width: 912px;
+    height: 305px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.gt-bttonBox ul{
+    list-style: none;
+}
+.gt-alBoxIpu{
+    width: 180px;
+    height: 32px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-aligLf{
+    margin-left: 35px;
+}
+.gt-bttonBoxLi textarea{
+    width: 445px;
+    height: 64px;
+    resize: none;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-bttonImg{
+        width: 100px;
+    height: 100px;
+    background: inherit;
+    background-color: rgba(245, 245, 245, 1);
+    display: inline-block;
+    text-align: center;
+margin-top: 6px;
+}
+.gt-bttonImg img{
+width: 40px;
+height: 40px;
+margin-top: 20px;
+}
+.gt-alignChoose{
+    display: inline-block;
+margin-left: 8px;
+}
+.gt-chooseBut{
+    width: 80px;
+    height: 32px;
+    background: inherit;
+    background-color: rgba(1, 185, 254, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 185, 254, 1);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 32px;
+   font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.gt-chooseBut:hover{
+    background-color: rgba(27,191,254,1);
+      border-color: rgba(27,191,254,1);
+}
+.gt-alignChoose p{
+    margin-top: 10px;
+font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #FD7768;
+}
+.gt-graded{
+margin-top: 18px;
+margin-left: 50px;
+}
+
+/*保存取消*/
+.gt-butSave{
+        width: 60px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    display: inline-block;
+    background-image: url('../image/ico/u2529.png');
+    background-size: 100% 100%;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.gt-butSave:hover{
+     background-image: url('../image/ico/u2529_mouseOver.png');
+}
+.gt-butNoSave{
+width: 60px;
+    height: 32px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(201, 201, 201, 1);
+    border-radius: 2px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #353535;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+   margin-left: 20px;
+   cursor: pointer;
+    
+}
+.gt-butNoSave:hover{
+    border: 1px solid rgba(13, 194, 146, 1);
+}
+.gt-butBox{
+    
+    width: 912px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+ 
+}

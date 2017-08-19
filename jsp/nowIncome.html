@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+   <link rel="stylesheet" href="../css/nowIncome.css">
+</head>
+<body>
+
+<div class="gt-bgd">
+
+  <div class="gt-backDiv">
+
+<p> <span class="gt-backCur"><span>前台营业 > </span> <span class="gt-backBlu">当班收入查询</span></span> <span class="gt-backSp">退出</span> </p>
+      </div>
+<!--前台页面默认显示-->
+<div class="gt-deails" style="display:block">
+
+
+
+    
+  <!--个人信息-->
+          <div class="gt-perInf">
+           <span class="gt-perSpan"><img src="../image/ico/u8005.png" alt=""></span> 
+            <div class="gt-perName">
+                <ul>
+                    <li>姓名 ： <span>小多</span></li>
+                    <li>工号 ： <span>0001</span></li>
+                    <li>职位 ： <span>收银员</span></li>
+                    </ul>
+                    <ul>
+                    <li>上班时间 ： <span>08:54~18:01</span></li>
+                   
+                    </ul>
+            </div>
+          </div>
+       
+        <div class="gt-grossed">
+              <div class="gt-classDetil">
+                <ul><li>本班收入总额 ：<span class="gt-classDetilA">20064.00</span></li></ul>
+                <ul class="gt-groUl">
+                    <li>现金支付 ：<span>10062.00</span></li>
+                    <li>银行卡支付 ：<span>5002.00</span></li>
+                    <li>会员储值卡支付 ：<span>3000.00</span></li>
+                      <li>扫码支付 ：<span>2000.00</span></li>
+                    
+                    
+                    </ul>
+               </div>
+
+
+                <div class="gt-Elist">
+
+              <table  class="gt-enrotabl">
+               
+                <tbody id='gt-table1'>
+                  
+                </tbody>
+                    </table>
+</div>
+<div class="gt-flort">
+     <div class="gt-paging" ><span id='gt-homePg1' class=" gt-HoverclikBackg gt-clikBackg">1</span>
+     <span class="gt-HoverclikBackg" id='gt-showPg1'></span> 
+     <span class="gt-Next gt-HoverclikBackg" id='gt-nextPg1'><img src="../image/ico/u565.png" alt=""></span></div>
+</div>
+
+
+        </div>
+           
+                 
+</div>
+
+
+</div>
+      <!--短信通知-->
+                         <script type="text/template" id="table1">
+                  
+                            <tr class="gt-dataTr">
+                          <!-- <td class="gt-Edatli0"> 编号</td> -->
+                          <td class="gt-Edatli1">订单号</td>
+                          <!-- <td class="gt-Edatli2">学号</td>
+                          <td class="gt-Edatli3">姓名</td> -->
+                          <td class="gt-Edatli4"> 应付金额(元)</td>
+                          <td class="gt-Edatli5">抵扣金额(元)</td>
+                          <td class="gt-Edatli6">实付金额(元)</td>
+                          <td class="gt-Edatli7">支付方式</td>
+                         
+                    </tr>
+     <% for(var i=0,len=list.length; i<len; i++) { %>
+                     <tr class="gt-dataTr">
+                          <!-- <td class="gt-Edatli0"> <%=list[i].orderNo%></td> -->
+                          <td class="gt-Edatli1"> <%=list[i].orderNo%></td>
+                          <!-- <td class="gt-Edatli2"> <%=list[i].orderNo%></td>
+                          <td class="gt-Edatli3"> <%=list[i].orderNo%></td> -->
+                          <td class="gt-Edatli4"> <%=list[i].allMoney%></td>
+                          <td class="gt-Edatli5"> <%=list[i].buckleMoney%></td>
+                          <td class="gt-Edatli6"> <%=list[i].actualMoney%></td>
+                          <td  data-pafor='<%=list[i].paymentType%>'class="gt-Edatli7 gt-payfor"></td>
+                         
+                    </tr>
+        <% } %>
+
+            
+                      
+                      </script>
+
+</body>
+<script src="../js/common/jquery-1.8.3.js"></script>
+<script src="../js/common/common.js"> </script>
+<script src="../js/common/underscore-min.js"> </script>
+ <script src="../js/nowIncome/nowIncome.js"></script>
+</html>

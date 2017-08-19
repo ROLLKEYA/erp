@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+   <link rel="stylesheet" href="../css/home_enrol.css">
+</head>
+<body>
+ 
+<div class="gt-bgd">
+     
+      <div class="gt-backDiv">
+
+<p> <span class="gt-backCur"><span>前台营业 > </span> <span class="gt-backBlu">新学员报名</span></span> <span class="gt-backSp">退出</span> </p>
+      </div>
+
+<!--前台页面学员报名项-->
+<div class="gt-deails" style="display:block">
+
+        <!--学员报名-->
+     
+      <div class="gt-step">
+    <div class="gt-stepDa"> <p>报名步骤:</p></div>
+<div class="gt-stepDb gt-stepImg"><span>1</span></div>
+<div class="gt-stepDb gt-stepDc  gt-stepImgOp"><span>2</span></div>
+<div class=" gt-stepDb gt-stepDd  gt-stepImgOp"><span>3</span></div>
+<div class="gt-steplin "> <div class="gt-steplinBule"></div></div>
+<div class="gt-steplin gt-steplinA"></div>
+<div class="gt-stepWr"><span>填写信息</span> <span>选择课程</span> <span>支付费用</span></div>
+      </div>
+
+ <div id='gt-entrone'   class="gt-personal">
+
+<div class="gt-personalTab">
+    <div >
+<div class="gt-perDiv"> 
+    <div class="gt-Listpast"><span class="gt-perCorl">* </span><span>姓名:</span> 
+     
+    </div>
+      <div class="gt-waringName">名字不能为空</div>
+       <div class="gt-waringPhote">请输入正确的手机号码</div>
+    <span class="gt-perSpan"> <span class="gt-perPostion"><img src="../image/ico/u11558.png" alt=""></span> <input id='gt-IFinput1' class="gt-BName" type="text"></span> 
+  <div class="gt-Listpast"><span  class="gt-perCorl">* </span><span>学员电话:</span></div> <span class="gt-perSpan"> <input  onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)"  id='gt-IFinput3'  type="text"></span> 
+ 
+  </div>
+
+<div class="gt-perDiv ">
+     <div class="gt-Listpast"> <span>就读学校:</span>  </div>
+     <span class="gt-perSpan">  <input id='gt-IFinput2' type="text"></span> 
+     <div class="gt-Listpast"><span  class="gt-perCorl gt-magiClass">* </span><span>年级:</span> </div>
+     <span class="gt-perSpan">
+    <select name="" id="gt-Bselect" class="gt-selecAa gt-Bselec">
+          
+        </select>
+     </span>
+ 
+   </div>
+
+   <div class="gt-perDiv"> 
+        <div class="gt-Listpast"> <span class="gt-perCorl">* </span> <span>性别:</span></div>
+   <span data-sex='0' class="gt-Qlistsex" id='gt-Bsex'><div class="gt-man"><div id='gt-Bman' class="gt-round gt-roundRad gt-roundRB"><span class="gt-roundSpan"></div> <span class="gt-manSpan">男</span></div>
+     <div class="gt-woman"><div id='gt-BWoman' class="gt-round gt-roundRad"> <span class="gt-roundSpan"></span></div> <span class="gt-womanSpan">女</span></div>
+    </span><div class="gt-Listpast">  <span class="">邮箱:</span> </div> <span class="gt-perSpan"> <input id='gt-IFinput4' type="text">
+  </div>
+<!--学科分析-->
+<div class="gt-analysisss">
+   
+    <div class="gt-QListpast">  <span class=""> 学科分析: </span> </div> 
+<div class="gt-analysis gt-letMari" id='gt-sbjOrclass'>
+    <div id='gt-capySbj' class="gt-Qcaysbjs">
+          <span  class="gt-selecA">             
+       <select name="" id="gt-Bsbujs" class="gt-selecAa gt-BselecList">
+           
+        </select>
+</span>
+<input  onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)"   class="gt-textInput" type="text" > 
+<span>分</span>  <div  class=" gt-delfater"><span>点击删除</span></div> 
+
+</div>
+<div  class="gt-Qcaysbjs" id='gt-BoxsubList'></div>
+</div>
+<div class="gt-addSct" id='gt-BaddSbj'><span>添加学科</span></div>
+
+<div class="gt-address"> <div class="gt-Listpast"> <span>家庭住址:</span></div> <input id='gt-IFinput6' type="text"></div>
+
+<div class="gt-study"><div class="gt-QListpast"><span >学情分析:</span></div> <textarea id='gt-IFinput7'class="gt-textdail" rows="2" cols="30">
+</textarea></div>
+</div>
+
+<!-- <div id='gt-Baddstudent' class="gt-addStudents "><span>添加学员</span></div> -->
+
+</div>
+
+<div class="gt-headImg">
+ <div class="gt-headImagbox"> <span class="gt-headimgText">头像:</span> <div class="gt-listImg"><img  id="preview" alt="" name="pic" /></div> <div class="gt-headImagpost"></div></div>
+
+<form enctype="multipart/form-data"  method = 'post'  action = 'user_login_submit.action'  name="form1">
+		<input class="gt-imgLid" id="f" onchange="change()" type="file" name="f"  />
+		<div  id='gt-imagChoose' class="gt-imagChoose"> <span>选择图片</span>  </div>
+       
+	</form>
+<div class="gt-imageSugg"><span>提示:建议使用一寸彩色图片</span></div>
+
+</div>
+
+</div>
+
+<div class="gt-familyInforma">
+
+<div class="gt-Parents"><span>家长姓名:</span>  <input class="gt-BparentList" type="text"> 
+
+<span class="gt-margiSpan gt-ParentsMar">关系:</span><span  class="gt-selecA">      
+<input class="gt-listInpt gt-IFaddLIst2" type="text">        
+</span>
+<span class="gt-ParentsMar" >联系电话:</span> <input onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)"  class="gt-IFaddLIst3" type="text"> 
+ </div>
+<div id='gt-Bprent'></div>
+<div id='gt-BAddparent' class="gt-addSct gt-addParents"><span>添加家长</span></div>
+
+<div  id='gt-butonNext' class="gt-addStudents gt-nextBut "><span>保存信息</span></div> <div class="gt-addStudents gt-cancelBut"><span>取消</span></div>
+</div>
+
+
+ </div>
+
+ <div></div>
+                      
+</div><script src="../js/common/jquery-1.8.3.js"></script>
+  <script src="../js/enronlName/enronlName.js"></script>
+   <script src="../js/enronlName/feil.js"></script>
+   <script src="../js/common/common.js"></script>
+</body>
+</html>

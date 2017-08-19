@@ -1,0 +1,638 @@
+@charset "utf-8";
+			*{
+            padding:0px;
+            margin: 0px;
+            }
+        table { 
+        border-collapse:collapse; 
+        border-spacing:0; 
+        } 
+        th,td { 
+        padding: 0; 
+        margin: 0;
+        }
+           
+
+
+
+            .gt-bgd{
+                width: 100%;
+                height: 1616px;
+                background-color: rgba(245, 245, 245, 1);
+                position: relative;
+
+            }
+            .gt-nav{
+
+                width: 61px;
+                height: 50px;
+                margin-bottom: 5px;
+
+            }
+        .gt-nav:hover {
+        background: url('../image/ico/u7946_mouseOver.png') no-repeat;
+            background-size: 61px 50px;
+
+        }
+            .gt-icoSel,.gt-icoNav{
+                text-align: center;
+                line-height: 50px;
+            }
+
+            .gt-sel{
+                position: relative;
+            
+            }
+            .gt-navBox{
+                top:-10px;
+                left: 0px;
+                position:absolute;
+                z-index: 4;
+            }
+            /*返回按钮*/
+            .gt-pagButoon{
+                position: absolute;
+                top:400px;
+                right: -100px;
+            width: 14px;
+            height: 84px;
+            line-height: 84px;
+            text-align: center;
+            background-color: rgba(47, 64, 86, 1);
+            border: none;
+            border-radius: 4px;
+            z-index: 100;
+            }
+            .gt-pagButoon div img{
+                width: 20px;
+                height: 21px;
+            }
+            /*前进按钮*/
+            .gt-goButoon{
+                position: absolute;
+                top:400px;
+                right: -12px;
+                width: 14px;
+                height: 84px;
+                line-height: 84px;
+                text-align: center;
+                background-color: rgba(47, 64, 86, 1);
+                border: none;
+                border-radius: 4px;
+                z-index:999;
+            }
+            .gt-goButoon div img{
+                width: 20px;
+                height: 21px;
+            }
+
+            /*修改头像*/
+            .gt-edit{
+            width:120px;
+            height: 65px;
+            background: white;
+            position: absolute;
+            right: -120px;
+            top:0px;
+        display: none;
+            }
+            .gt-editBt{
+                width: 98px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                margin-left: 10px;
+                color: #353535;
+                margin-top: 10px;
+            
+            }
+
+        .gt-editA{
+            width:120px;
+            height: 65px;
+            background: white;
+            position: absolute;
+            right: -120px;
+            top:-5px;
+        display: none;
+            }
+            .gt-editBtA{
+                width: 98px;
+                height: 40px;
+                color: #353535;
+                text-align: center;
+                line-height: 40px;
+                margin-left: 10px;
+                margin-top: 10px;
+            
+            }
+
+            /*背景变蓝*/
+            .gt-hoveBt{
+                background-color: rgba(13, 194, 146, 1);
+                color: white;
+            }
+
+            .gt-icoSel{
+                margin-top: 15px;
+                
+            }
+            .gt-icoSel img{
+
+                width: 32px;
+                height: 32px;
+
+            }
+            .gt-icoNav img{
+                width: 22px;
+                height: 22px;
+
+            }
+
+            .gt-navBlock{
+            background: url('../image/ico/u7946_mouseOver.png') no-repeat;
+            background-size: 61px 55px;
+
+            }
+
+            .gt-deails{
+              
+                width: 100%;
+                height: 1189px;
+                margin-left: 5%;
+                
+            }
+
+            footer{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                width: 1135px;
+                height: 128px;
+                font-size: 12px;
+                text-align: center;
+
+            }
+            .gt-footerImg{
+            width: 1135px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            }
+            .gt-footerImg img{
+                width: 80px;
+                height: 80px;
+
+            }
+            .gt-footerIco{
+                display: inline-block;
+                width: 48px;
+                height: 15px;
+                margin-right: 30px;
+                position: relative;
+            }
+            .gt-footerIco img{
+                width: 48px;
+                height: 15px;
+                top:3px;
+                right: 0px;
+                position: absolute;
+            }
+            .gt-fotterMac{
+            margin-bottom: 6px;
+
+            }
+
+        
+        /*返回*/
+            .gt-backDiv{
+            width:95%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: left;
+            margin-top: 10px;
+            font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+            font-weight: 400;
+            font-style: normal;
+            color: #353535;
+            margin-left: 5%;
+            }
+            .gt-backSp{
+            float: right;
+            width: 60px;
+            height: 30px;
+            background-color: rgba(1, 185, 254, 1);
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(1, 185, 254, 1);
+            border-radius: 2px;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            }
+        .gt-backBlu{
+            color: #0DC292;
+        }
+        .gt-backCur{
+        cursor:pointer; 
+        }
+
+        /*会员查询*/
+        .gt-member{
+            width: 100%;
+            height: 160px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 1);
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(238, 238, 238, 1);
+            font-family: 'Arial Normal', 'Arial';
+            font-weight: 400;
+            font-style: normal;
+                font-size: 14px;
+            color: #333333;
+        
+            line-height: normal;
+        }
+
+        /*搜索栏*/
+        .gt-prSearc{
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 20px;
+            height: 30px;
+            border: 1px solid  rgba(210, 210, 210, 1);
+        }
+        .gt-prSearc input{
+            width: 163px;
+            height: 28px;
+            border: none;
+            outline: none;
+            margin-left:10px;
+        }
+        .gt-prSearcA{
+            display: inline-block;
+        position: absolute;
+        top:5px;
+        right: 10px;
+
+        }
+        .gt-prSearc img{
+        width:18px;
+        height: 18px;
+        }
+
+        .gt-memberMG{
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .gt-ulMG ul{
+            float: left;
+            list-style: none;
+            margin-left: 40px;
+        
+        }
+        .gt-ulMG ul li{
+            height: 20px;
+            margin-top: 20px;
+        }
+
+        /*商品查询*/
+        .gt-roductSc{
+
+            width: 100%;
+            height: 280px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 1);
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(238, 238, 238, 1);
+            font-family: 'Arial Normal', 'Arial';
+            font-weight: 400;
+            font-style: normal;
+                font-size: 14px;
+            color: #333333;
+        
+            line-height: normal;
+        }
+
+        .gt-choseShop{
+            width: 80px;
+            height: 32px;
+            display: inline-block;
+            line-height: 32px;
+            text-align: center;
+            color: white;
+            background-image: url('../image/ico/u15656.png');
+
+        }
+        .gt-choseShop:hover{
+            background-image: url('../image/ico/u15782_mouseOver.png');
+        }
+
+        /*表格*/
+
+        .gt-Elist{
+        margin-top: 20px;
+            width: 850px;
+            margin-left: 40px;
+        border: 1px solid #e4e4e4;
+        }
+        .gt-enrotabl{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            border: none; 
+            outline: none;
+            font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 12px;
+
+        }
+
+        .gt-enrotabl td{
+            
+        height: 50px;
+        border-right: 1px solid #e4e4e4;
+        border-bottom: 1px solid white;
+        
+        }
+        /*奇数行*/
+        .gt-enrotabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+        /*偶数行*/
+        .gt-enrotabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+        /*报名活动表格*/
+
+        .gt-Edatli0{
+        width: 60px;
+        }
+        
+        .gt-Edatli1{
+        width: 150px;
+        }
+        .gt-Edatli2{
+        width: 90px;
+        }
+        .gt-Edatli3{
+        width: 90px;
+        }
+        .gt-Edatli4{
+        width: 70px;
+        }
+        .gt-Edatli5{
+        width: 100px;
+        }
+        .gt-Edatli6{
+        width: 100px;
+        }
+        .gt-Edatli7{
+        width: 100px;
+        }
+        .gt-Edatli8{
+        width: 80px;
+        }
+        .gt-enrotabl tbody tr:hover td { background-color: #f0f0f1; }
+        .gt-Edatli3 input{
+            width: 64px;
+            height: 30px;
+            outline: none;
+        background-color: rgba(255, 255, 255, 1);
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(210, 210, 210, 1);
+            border-radius: 2px;
+        }
+        /*订单金额*/
+        .gt-orders{
+
+            width:100%;
+            height: 320px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 1);
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(238, 238, 238, 1);
+            font-family: 'Arial Normal', 'Arial';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            color: #333333;
+            line-height: normal;
+        }
+        .gt-orderTable{
+            margin-left: 40px;
+        }
+        .gt-orderTable tr td{
+            padding-top: 20px;
+        }
+
+        .gt-td{
+            text-align:right;
+        }
+        .gt-bigTd{
+            position: relative;
+            width: 150px;
+            height: 50px;
+        
+        }
+
+      .gt-voucher{
+           height: 22px;
+           
+           }
+
+            .gt-voucherA{
+            
+            height: 22px;
+                margin-top: 15px;
+            }
+
+            /*勾选*/
+            
+        .gt-square{
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            height: 20px;
+            width: 20px;
+            margin: 0 auto;
+            border: 1px solid #e4e4e4;
+            background-color: white;
+        }
+
+        .gt-square span{
+        display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin: 0 auto;
+            margin-top: 2px;
+        }
+
+        /*勾选样式*/
+        .gt-squareImg{ 
+        background-color: #0dc292;
+        }
+        .gt-squareImgHook{
+            
+            
+        background-image: url('../image/ico/u774.png');
+        background-size: 15px 15px;
+        }
+
+        .gt-supBlock{
+            float: right;
+            margin-right: 25px;
+            display: inline-block;
+            margin-left: 10px;
+           
+        }
+
+        .gt-tdLong{
+            width: 170px;
+        }
+        .gt-tdML{
+            margin-left: 8px;
+        }
+        .gt-bigTdBlock{
+          
+            display: inline-block;
+            float: right;
+        }
+        .gt-tdColro{
+           color:#FD7768;
+           font-size: 18px;
+        }
+
+    /*支付方式*/
+     .gt-payment{
+        width: 100%;
+        height: 616px;
+        background-color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        border: 1px solid rgba(238, 238, 238, 1); 
+        margin-top: 20px; 
+        }
+        .gt-paymentDiv{
+            width: 150px;
+            height: 75px;
+            background-color: rgba(242, 242, 242, 1);
+            border-radius: 2px;
+            font-family: 'Arial Normal', 'Arial';
+            line-height: 75px;
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            margin-left: 20px;
+            display: inline-block;
+            color: #666666;
+            position:relative;
+        }
+        .gt-cash{
+            top:10px;
+            left: 30px;
+            position: absolute;
+            display: inline-block;
+        
+        }
+        .gt-cash img{
+        width: 30px;
+        height: 30px;
+        }
+        .gt-cashC{
+            top:10px;
+            left: 30px;
+            position: absolute;
+            display: inline-block;
+        
+        }
+        .gt-cashA{
+        top:10px;
+            left: 20px;
+            position: absolute;
+            display: inline-block;
+
+        }
+        .gt-cashB{
+        top:10px;
+            left: 20px;
+            position: absolute;
+            display: inline-block;
+        }
+
+
+
+        .gt-cashA img,.gt-cashB img,.gt-cashC img{
+        width: 28px;
+        height:28px;
+        }
+        .gt-cashBack{
+            color: white;
+            background-color: rgba(1, 185, 254, 1);
+        }
+        .gt-cashSpan{
+            margin-left: 30px;
+        }
+        .gt-cashSpanB{
+        margin-left: 35px;
+        }
+        .gt-paymentWay{
+            margin-top: 20px;
+            margin-left: 45px;
+        }
+        .gt-paymentP{
+                color: #353535;
+                font-size: 14px;
+            margin-top: 20px;
+            margin-left: 65px;
+        }
+
+        .gt-butonCom{
+
+            width: 80px;
+            height: 32px;
+            margin-top: 60px;
+            margin-left: 65px;
+            text-align: center;
+            line-height: 32px;
+            font-family: 'Microsoft YaHei UI';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            color: #FFFFFF;
+            background-image: url('../image/ico/u8094.png')
+        }
+        .gt-butonCom:hover{
+            background-image: url('../image/ico/u8094_mouseOver.png')
+        }
+        .gt-nextBut{
+            display:inline-block;
+        }
+        .gt-cancelBut{
+            display:inline-block;
+            box-sizing: border-box;
+            border: 1px solid rgba(201, 201, 201, 1);
+            border-radius: 2px;
+            font-family: 'Microsoft YaHei UI';
+            background-image: none;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            color: #353535;
+            background-color: rgba(255, 255, 255, 1);
+            margin-left: 20px;
+        }
+        .gt-cancelBut:hover{
+
+        background-image: none;
+        border: 1px solid rgba(13,194,146,1);
+        }

@@ -1,0 +1,761 @@
+@charset "utf-8";
+		*{
+        padding:0px;
+        margin: 0px;
+        }
+        input,textarea{
+            text-indent:5px;
+        }
+
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color: #666; 
+    } 
+    input:-moz-placeholder, textarea:-moz-placeholder { 
+    color: #666; 
+    } 
+    input::-moz-placeholder, textarea::-moz-placeholder { 
+    color: #666; 
+    } 
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color: #666; 
+    } 
+        .gt-boxCentr{
+            width: 90%;
+            margin: 0 auto;
+        }
+    table { 
+    border-collapse:collapse; 
+    border-spacing:0; 
+    } 
+    th,td { 
+    padding: 0; 
+    margin: 0;
+    }
+   
+
+
+        .gt-bgd{
+            width:100%;
+            height: 1500px;
+            background-color: rgba(245, 245, 245, 1);
+            position: relative;
+
+        }
+        
+
+        .gt-deails{
+           
+            width: 100%;
+            margin-left: 5%;
+            height: 1189px;
+            
+        }
+
+
+      
+        /*返回*/
+        .gt-backDiv{
+        width: 88%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        text-align: left;
+        margin-top: 10px;
+        font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+        font-weight: 400;
+        font-style: normal;
+        color: #353535;
+        margin-left: 5%;
+        }
+
+        
+        .gt-backSp{
+        float: right;
+        width: 60px;
+        height: 30px;
+        background-color: rgba(1, 185, 254, 1);
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(1, 185, 254, 1);
+        border-radius: 2px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+        }
+    .gt-backBlu{
+        color: #0DC292;
+    }
+    .gt-backCur{
+    cursor:pointer; 
+    }
+
+
+
+
+    .gt-callNameBox{
+        width: 100%;
+        height: 1300px;
+    background-color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        border: 1px solid rgba(238, 238, 238, 1); 
+        margin-top:20px;
+
+    }
+    /*头部信息*/
+    .gt-heardInfor{
+        width:86%;
+        height: 40px;
+        background: inherit;
+        background-color: rgba(251, 241, 204, 1);
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(245, 218, 167, 1);
+        border-radius: 2px;
+        margin-left: 60px;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #353535;
+        font-family: 'Microsoft YaHei UI';
+        font-weight: 400;
+        line-height: 40px;
+        margin-left: 2.5%
+    }
+
+    .gt-heardInfor ul{
+        margin-left: 30px;
+    list-style: none;
+    }
+    .gt-heardInfor ul li{
+    float: left;
+    margin-right: 30px;
+    }
+    .gt-heardInfor span{
+        color: #FD7768;
+        font-size: 16px;
+    }
+
+    /*日期*/
+    .gt-timeDte{
+        width: 90%;
+     margin-left: 2.5%;
+        margin-top: 20px;
+        font-family: 'Microsoft YaHei UI';
+        font-weight: 400;
+        font-style: normal;
+        color: #353535;
+        font-size: 14px;
+        text-align: left;
+    }
+    .gt-timeDte input{
+        width: 140px;
+        height: 30px;
+        background: inherit;
+        background-color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(210, 210, 210, 1);
+        border-radius: 2px;
+        color: #666; 
+    }
+
+
+    /*表格*/
+    .gt-tableHeard{
+        width:86%;
+      margin-left: 2.5%;
+        margin-top: 30px;
+        font-family: 'Microsoft YaHei UI';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+            color: #333333;
+    }
+
+    .gt-Elist{
+    
+        width:86%;
+        text-align: center;
+    margin-left: 60px;
+    border: 1px solid #e4e4e4;
+    margin-top: 8px;
+    margin-left: 2.5%;
+    }
+
+    .gt-enrotabl .gt-thead{
+        border: none; 
+        text-align: left;
+    }
+
+    .gt-enrotabl{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border: none; 
+        outline: none;
+        font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        color: #333333;
+
+    }
+
+    .gt-enrotabl td{
+        
+    height: 40px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid white;
+    
+    }
+    /*奇数行*/
+    .gt-enrotabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+    /*偶数行*/
+    .gt-enrotabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+    /*报名活动表格*/
+
+    .gt-Edatli0{
+    width: 120px;
+    position: relative;
+    }
+    
+    .gt-Edatli1{
+    width: 120px;
+    }
+    .gt-Edatli2{
+    width: 90px;
+    }
+    .gt-Edatli3{
+    width: 90px;
+    }
+    .gt-Edatli4{
+    width: 90px;
+    }
+    .gt-Edatli5{
+    width: 90px;
+    }
+    .gt-Edatli6{
+    width: 90px;
+    }
+
+    .gt-enrotabl tbody tr:hover td { background-color: #f0f0f1; }
+
+    .gt-sign{
+        display: inline-block;
+        text-align: center;
+        width: 64px;
+        height: 24px;
+        line-height: 24px;
+        color: white;
+        background: url('../image/ico/u3890.png') no-repeat;
+        cursor: pointer;
+    }
+
+    .gt-sign:hover{
+        background: url('../image/ico/u3890_mouseOver.png') no-repeat;
+
+    }
+
+    /*分页*/
+    .gt-paging {
+        float: right;
+    margin-top: 7px;
+    height: 28px;
+    border:1px solid #f0f0f1;
+    }
+    .gt-paging span{
+        display: inline-block;
+        width: 40px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        float: left;
+        box-sizing: border-box;
+        background-image: url('../image/ico/u561.png');
+        background-size: 40px 30px;
+        /*border-top:1px solid #f0f0f1;*/
+        border-right:1px solid #f0f0f1;
+        /*border-bottom:1px solid #f0f0f1;*/
+
+    }
+    .gt-Next{
+        cursor: pointer;
+    }
+    .gt-Next img{
+    width: 7px;
+    height: 12px;
+    }
+    .gt-HoverclikBackg:hover{
+
+    background-color: #f0f0f1;
+    }
+    .gt-paging .gt-clikBackg{
+        background-color: rgba(13, 194, 146, 1);
+    
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(13, 194, 146, 1);
+        border-radius: 2px;
+        color: white;
+        cursor: pointer;
+    }
+    /*背景透明 防止点击*/
+    .gt-vifrification{
+    position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 1203px;
+        height: 1600px;
+        background-image: url('../image/ico/u2518.png');
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+            overflow:hidden;
+        filter:alpha(opacity=30); /*IE滤镜，透明度50%*/
+        -moz-opacity:0.3; /*Firefox私有，透明度50%*/
+        opacity:0.3;/*其他，透明度50%*/
+        z-index: 21;
+
+    }
+
+    .gt-bigBox{
+        width: 100%;
+        
+        position: relative;
+    }
+    .gt-backgImg{
+        top:0px;
+        position: absolute;
+        width: 1200px;
+        height:1411px;
+        z-index: 9;
+        background-image: url('../image/ico/u9598.png');
+        background-size: 1200px 1411px;
+        background-repeat: no-repeat;
+        filter:alpha(opacity=40);  
+        -moz-opacity:0.4;  
+        -khtml-opacity: 0.4;  
+        opacity: 0.4;  
+
+    }
+    .gt-billboards{
+        display: inline-block;
+        float:right;
+    }
+
+    .gt-delf{
+        color: #797979;
+    }
+
+    /*短信通知*/
+    .gt-SMS{
+    margin-top: 20px;
+        
+    }
+    .gt-smsHeader{
+        width: 850px;
+        height: 40px;
+        background-color: rgba(251, 241, 204, 1);
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(245, 218, 167, 1);
+        border-radius: 2px;
+        line-height: 40px;
+        font-family: 'Arial Normal', 'Arial';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 13px;
+        color: #353535;
+        margin-left: 40px;
+    }
+    .gt-smHspan{
+        margin-left: 30px;
+    }
+    .gt-smHspanB{
+        display: inline-block;
+    margin-left: 30px;
+        font-family: 'Microsoft YaHei UI';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #FD7768;
+    }
+    .gt-smHspanClor{
+        font-family: 'Microsoft YaHei UI';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #FD7768;
+    }
+
+    /*签到*/
+    .gt-signed{
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-size: 14px;
+    width: 720px;
+    height: 640px;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    position:absolute;
+    z-index: 99;
+    top:230px;
+    left: 280px;
+    }
+
+    .gt-singedHeader{
+        width: 100%;
+        height: 42px;
+        background: inherit;
+        background-color: rgba(248, 248, 248, 1);
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(238, 238, 238, 1)
+    }
+
+    .gt-haveSign{
+        display: inline-block;
+    float: left;
+    margin-left: 10px;
+    line-height: 42px;
+    }
+    .gt-sigedImg{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        float: right;
+        line-height: 42px;
+        margin-right: 20px;
+        cursor: pointer;  
+    }
+    .gt-sigedImg img{
+    width: 16px;
+        height: 16px;
+    }
+    .gt-signedUl{
+        width: 620px;
+        height: 20px;
+       margin: 0 auto;
+        margin-top: 20px;
+        
+    }
+.gt-signedUl ul{
+    margin-left: 8px;
+list-style: none;
+
+}
+.gt-signedUl ul li{
+    float: left;
+    margin-right: 80px;
+   
+}
+.gt-signedLine{
+    width: 620px;
+    height: 1px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+.gt-spuare{
+    width: 620px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.gt-spuare ul{
+    
+    list-style: none
+}
+.gt-spuare ul li{
+    float:left;
+    margin-right: 40px;
+}
+.gt-bulespuare{
+    display: inline-block;
+        width: 15px;
+    height: 15px;
+    background: inherit;
+    background-color: rgba(13, 194, 146, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(13, 194, 146, 1);
+    border-radius: 2px;
+}
+.gt-greyespuare{
+    display: inline-block;
+  width: 15px;
+    height: 15px;
+    background: inherit;
+    background-color: rgba(201, 201, 201, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(201, 201, 201, 1);
+    border-radius: 2px;
+}
+.gt-redspuare{
+    display: inline-block;
+         width: 15px;
+    height: 15px;
+    background: inherit;
+    background-color: rgba(253, 119, 104, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(253, 119, 104, 1);
+    border-radius: 2px;
+}
+.gt-spuare ul .gt-spuareRt{
+    float: right;
+}
+.gt-message{
+        width: 90px;
+    height: 28px;
+    display: inline-block;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    line-height: 28px;
+    background-image: url('../image/ico/u18220.png')
+}
+.gt-message:hover{
+background-image: url('../image/ico/u18220_mouseOver.png')
+}
+.gt-studenList{
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+.gt-smallSpuer{
+    float: left;
+    display: inline-block;
+     width: 64px;
+    height: 64px;
+    margin-top: 8px;
+    text-align: center;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gt-centrnTop{
+    margin-top: 20px;
+}
+.gt-studenList ul{
+    list-style: none;
+}
+
+.gt-studenList ul li{
+    float: left;
+}
+
+.gt-notyet{
+     background: inherit;
+    background-color: rgba(201, 201, 201, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(201, 201, 201, 1);
+    border-radius: 2px;
+}
+.gt-came{
+
+   background: inherit;
+    background-color: rgba(13, 194, 146, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(13, 194, 146, 1);
+    border-radius: 2px; 
+}
+.gt-dayOff{
+        background: inherit;
+    background-color: rgba(253, 119, 104, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(253, 119, 104, 1);
+    border-radius: 2px;
+}
+.gt-sYwordAd{
+    z-index: 99;
+}
+.gt-flort{
+    width: 86%;
+    margin-left: 2.5%;
+}
+
+.gt-trans{
+            position: absolute;
+            left: -1px;
+            top: 0px;
+            width: 1282px;
+            height:100%;
+            background-image: url('../image/ico/u2518.png');
+           background-size: 100% 100%;
+          
+            filter:alpha(opacity=30); /*IE滤镜，透明度50%*/
+            -moz-opacity:0.3; /*Firefox私有，透明度50%*/
+            opacity:0.3;/*其他，透明度50%*/
+            z-index:87;
+        }
+      .gt-trans2{
+            position: absolute;
+            left: -1px;
+            top: 0px;
+            width: 1282px;
+            height:100%;
+            background-image: url('../image/ico/u2518.png');
+           background-size: 100% 100%;
+          
+            filter:alpha(opacity=30); /*IE滤镜，透明度50%*/
+            -moz-opacity:0.3; /*Firefox私有，透明度50%*/
+            opacity:0.3;/*其他，透明度50%*/
+            z-index:100;
+        }
+      
+  @media screen and (min-width: 1280px){
+     .gt-trans{
+           left: -2px;
+         width: 102%;
+         height: 100%;
+     } 
+           .gt-trans2{
+           left: -2px;
+         width: 102%;
+         height: 100%;
+     } 
+  }
+    .gt-peploRty{
+        margin-right: 9px;
+    }
+
+   .gt-signedNew{
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-size: 14px;
+       width: 320px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    position:absolute;
+    z-index: 101;
+       top: 401px;
+    left: 450px;
+    }
+.gt-boxsingge{
+    width: 100%;
+    height: 32px;
+    margin: 0 auto;
+   margin-top: 70px;
+    margin-left: 90px;
+}
+.gt-singge{
+    display: inline-block;
+    background-color: #0dc292;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    width: 60px;
+    height: 32px;
+    border-radius: 3px;
+    color: #fff;
+    margin-right: 20px;
+     cursor: pointer;
+}
+.gt-haswork{
+  display: inline-block;
+    background-color: #fd7768;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    width: 60px;
+    height: 32px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gt-sigedImgds{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        float: right;
+        line-height: 42px;
+        margin-right: 20px;
+        cursor: pointer;  
+
+    }
+    .gt-sigedImgds img{
+        width: 16px;
+        height: 16px;
+    }
+
+    /* 请假 */
+       .gt-relateGt{
+            display: inline-block;
+            float: left;
+        }
+        
+.gt-relate{
+
+            height: 64px;
+                font-family: 'Microsoft YaHei UI';
+            font-weight: 400;
+                font-size: 14px;
+                color: #353535;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+        .gt-relate textarea{    
+        
+            float: left;
+          width: 225px;
+          height: 67px;
+            resize: none;
+            background: inherit;
+            background-color: rgba(255, 255, 255, 0);
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(210, 210, 210, 1);
+            border-radius: 2px;
+            margin-left: 5px;
+        }
+        .gt-relateGt{
+            display: inline-block;
+            float: left;
+        }
+        .gt-listMto{
+            margin-top: 10px;
+        }

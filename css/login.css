@@ -1,0 +1,213 @@
+
+@charset "utf-8";
+            * {
+            padding: 0px;
+            margin: 0px;
+            }
+            /*居中*/
+            /*.gt-centerbox{
+            width: 1000px;
+             margin: 0 auto;
+
+            }*/
+            /*多粉头部*/
+            header{
+            width: 1280px;
+            height: 90px;
+            background: white;
+            }
+            /*多粉字样*/
+            header div{
+                height:90px;
+                width: 300px;
+            }
+             /*多粉字样图片*/
+            header div img{
+                
+                display: inline-block;
+                width:50%;
+                height: 50%;
+                margin-top:20px;
+                margin-left: 50px;
+            }
+            /*背景图片*/
+            .gt-box{
+                height: 500px;
+                width:1280px;
+                background-size:100% 500px; 
+                background-image: url('../css/ico/u88854.jpg');
+                background-repeat:no-repeat;
+                
+            }
+           
+            /*小盼*/
+            .gt-ico{
+
+                width:120px;
+                height:120px;
+            }
+            /*小盼字样图片*/
+            .gt-ico img{
+            width: 100%;
+            height: 100%;
+
+            }
+
+             /*合子内模糊度（背景图）*/
+            .gt-hu{                
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        -webkit-filter: blur(2px);
+                        -moz-filter: blur(2px);
+                        -o-filter: blur(2px);
+                        -ms-filter: blur(2px);
+                        filter: blur(2px);
+            }
+            /*大盒子为了，小盼。智能化。。。等字段定位*/
+            .gt-bigbox{
+            width: 1280px;
+                position: relative;
+            }
+            /*小盼。智能化。。。等字段合子*/
+                .gt-p{
+                    width: 400px;
+                    height: 300px;
+                    color:white;
+                left: 180px;
+                top:140px;
+                position: absolute;
+                }
+         /*登录合子*/
+                .gt-logid{
+
+            width:300px;
+            height: 300px;
+            background: white;
+            position: absolute;
+            top:120px;
+            right: 95px;
+            text-align: center;
+
+                }
+         
+              .gt-admin{
+                  color: #333;
+                font-size: 14px;
+                font-weight: 700;
+                padding-top: 20px;
+              }
+        
+            .gt-box-dl{
+             width: 100%;
+             position: absolute;
+             bottom:20px;
+              left:50px;
+
+            }
+
+            .gt-contain{
+           position: relative;
+           height: 32px;
+           width: 240px;
+           margin: 0 auto;
+           margin-top: 26px;
+            border: 1px solid #dedede;
+            font-size: 12px;
+            color: #666;
+            line-height: 32px;
+            text-align: left;
+           text-indent: 8px;
+            }
+            .gt-contain input{
+              width: 180px;
+               height: 28px;
+                border: none;
+                outline: none;
+            }
+            .gt-entry{
+            
+            margin-top: 60px;
+            color: #fff;
+            background: #0cc292;
+            line-height: 32px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 3px;
+            text-align: center;
+            }
+           /*脚部*/
+            footer{
+
+                height:58px;
+                width: 1000px;
+                background: white;
+                margin-top: 100px;
+                margin-top: 292px;
+            
+            }
+            footer div{
+
+                margin-top: 40px;
+            }
+            footer div p{
+                font-family:'微软雅黑体';
+          color:#999999;
+          text-align:  center;
+          font-size: 12px;
+          margin-top: 8px;
+
+            }
+            .gt-tishi{
+                display: inline-block;
+            position: absolute;
+            top: -2px;
+            right: -170px;
+            width: 130px;
+            height: 32px;
+            border: 1px solid #f1623c;
+                height: 32px;
+            border: 1px solid #f1623c;
+            line-height: 32px;
+            background-size: 15px;
+            padding-left: 16px;
+            border-radius: 5px;
+            color: #f1623c;
+            font-size: 12px;
+            }
+            .gt-Pag{
+                display: inline-block;
+                 position: absolute;
+            top: -2px;
+            right: -170px;
+            width: 130px;
+            height: 32px;
+            border: 1px solid #f1623c;
+                height: 32px;
+            border: 1px solid #f1623c;
+            line-height: 32px;
+           
+            background-size: 15px;
+            padding-left: 16px;
+            border-radius: 5px;
+            color: #f1623c;
+            font-size: 12px;
+            }
+           .gt-inputSp {
+               display: inline-block;
+                width: 8px;
+    height: 8px;
+    border: 1PX solid #f1623c;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    top: 0;
+    left: -30px;
+    background: #ffffff;
+    border-top: none;
+    border-right: none;
+            }
+            

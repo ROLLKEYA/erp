@@ -1,0 +1,632 @@
+@charset "utf-8";
+	*{
+    padding:0px;
+    margin: 0px;
+    }
+    .gt-boxCentr{
+        width: 90%;
+        margin: 0 auto;
+    }
+    input{
+        text-indent: 8px;
+    }
+table { 
+  border-collapse:collapse; 
+  border-spacing:0; 
+ } 
+ th,td { 
+  padding: 0; 
+  margin: 0;
+  
+ }
+    header{
+    width:1200px;
+    height: 90px;
+
+    }
+    
+
+    .gt-deails{
+      
+        width: 100%;
+        height: 1189px;
+       margin-left: 5%;
+
+        
+    }
+
+     /*返回*/
+    .gt-backDiv{
+    width: 88%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #353535;
+    margin-left: 5%;
+    }
+    .gt-backSp{
+    float: right;
+    width: 60px;
+    height: 30px;
+    background-color: rgba(1, 185, 254, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 185, 254, 1);
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    }
+  .gt-backBlu{
+      color: #0DC292;
+  }
+  .gt-backCur{
+  cursor:pointer; 
+  }
+
+  /*步骤*/
+  .gt-step{
+
+    width:100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    margin-top: 20px; 
+    position: relative;
+  }
+
+  .gt-stepDa{
+      width:70px;
+      height: 19px;
+      position: absolute;
+      top:20px;
+    font-size: 14px;
+      left: 50px;
+  }
+  .gt-stepDb{
+      position: absolute;
+      width: 30px;
+    height: 30px;
+     top:20px;
+     text-align: center;
+     line-height: 30px;
+      left: 140px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    
+  }
+  .gt-stepImg{
+background-image: url('../image/ico/u12271.png');
+    background-size: 30px 30px;
+  }
+  .gt-stepImgOp{
+      background-image: url('../image/ico/u11616.png');
+    background-size: 30px 30px;
+      
+  }
+  .gt-steplinBule{
+      position: absolute;
+      top:-1px;
+      left: -1px;
+       width:101px;
+        height: 2px;
+      background-color: rgba(215, 215, 215, 1);
+     box-sizing: border-box;
+     border-width: 1px;
+     border-style: solid;
+     border-color: rgba(215, 215, 215, 1);
+  }
+  /*直线*/
+  .gt-steplin{
+      position: absolute;
+      top:35px;
+      left: 169px;
+     width: 100px;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        border: 1px solid rgba(215, 215, 215, 1);
+        border-radius: 0px;
+  }
+  .gt-steplinA{
+     position: absolute;
+      top:35px;
+      left: 298px;
+     width: 100px;
+  }
+  .gt-stepDc{
+    position: absolute;
+    top:20px;
+    left: 269px;
+    color: #C9C9C9;
+  }
+  .gt-stepDd{
+    position: absolute;
+    top:20px;
+    left: 398px;
+    color: #C9C9C9;
+  }
+  .gt-stepWr{
+      position: absolute;
+      top:60px;
+      left: 130px;
+      width: 320px;
+      height: 20px;
+      line-height: 20px;
+      font-family: 'Microsoft YaHei UI';
+      font-weight: 400;
+      font-style: normal;
+      color: #353535;
+      font-size: 14px;
+     text-align: left;
+  }
+  .gt-stepWr span {
+margin-right:65px; 
+  }
+
+  /*报名个人信息样式*/
+  .gt-personal{
+
+    width:100%;
+    /* height: 630px; */
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px solid rgba(238, 238, 238, 1);
+   color: #353535;
+   font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-align: left;
+    position: relative;
+    overflow-y: auto;
+  }
+  .gt-perSpan{
+    display: inline-block;
+    width:180px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    position: relative;
+    
+  }
+  .gt-perSpan input{
+      border: none;
+      outline: none;
+      line-height: 30px;
+      margin-left: 4px;
+      width:95%;
+      height: 30px;
+      }
+   .gt-perSpan .gt-BName{
+        width: 83%;
+    }
+      /* *样式*/
+      .gt-perCorl{
+          color: #FF6666
+      }
+.gt-perPostion{
+    width: 20px;
+    height: 20px;
+     position:absolute;
+    top:5px;
+    right: 3px;
+    cursor: pointer;
+}
+.gt-perPostion img{
+       width: 20px;
+    height: 20px;
+}
+.gt-personal{
+  margin-top: 20px;
+}
+.gt-perDiv{
+   /*  width:540px; */
+    margin-top: 25px;
+    margin-left: 50px;
+    position: relative;
+}
+.gt-Qlistsex{
+    width: 180px;
+    display: inline-block;
+}
+
+.gt-round{
+
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+.gt-round:hover{
+    background-image: url('../image/ico/u8376_mouseOver.png');
+    background-size: 20px 20px;
+   
+}
+.gt-roundRB:hover{ background-image: url('../image/ico/u2644_mouseOver.png');
+    background-size: 20px 20px;}
+.gt-roundRad{
+ background-image: url('../image/ico/u2592.png');
+    background-size: 20px 20px;
+}
+.gt-roundRB{
+    background-image: url('../image/ico/u2644.png');
+    background-size: 20px 20px; 
+}
+.gt-roundSpan{
+
+    display: inline-block;
+    position: absolute;
+    width:10px;
+    height: 10px;
+    top:5px;
+    right: 5px;
+    border-radius: 50%;
+    background-image: url('../image/ico/u2646.png');
+    background-size: 10px 10px;
+
+}
+.gt-man, .gt-woman{
+    display: inline-block;
+   margin-left: 20px;
+}
+.gt-manSpan{
+     width:20px;
+    height: 20px;
+}
+.gt-emil{
+   margin-left: 130px;  
+}
+/*学科分析*/
+.gt-analysis{
+   margin-top: 10px;
+   height: 102px;
+   width: 463px;
+   border: 1px solid  rgba(210, 210, 210, 1);
+   display: inline-block;
+   overflow-y: auto;
+}
+.gt-Qcaysbjs{
+margin-top: 8px;
+
+}
+
+/*下拉框*/
+
+.gt-selecA{
+    display: inline-block;
+    margin-left: 4px;
+    width: 100px;
+     height: 32px;
+     position: relative;
+     border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-Parents .gt-listInpt{
+   width: 100px;
+    height: 32px;
+    border: none;
+    outline: none;
+}
+.gt-analysisss{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.gt-Listpast{
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+  margin-right: 4px;
+  position: relative;
+}
+.gt-QListpast{
+    float: left;
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+.gt-selecAa{
+    padding-left: 2px;
+     width: 100px;
+     height: 32px;
+     font-size: 14px;
+     line-height: 28px;
+    border:0px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background:url('../image/ico/u584.png') no-repeat right center; 
+     background-size: 15px 9px;
+}
+.gt-textInput{
+    width: 80px;;
+    height: 32px;
+    margin-left: 15px;
+    outline: none;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-addSct{
+     margin-left:92px;
+     margin-top: 10px; 
+    width: 56px;
+    height: 19px;
+    cursor: pointer;
+}
+.gt-addSct span{
+    color: #0DC292;
+}
+
+/*家庭住址*/
+.gt-address{
+   /*  width: 560px; */
+    height: 32px;
+    /* margin-left: 50px; */
+    margin-top: 20px;
+  
+}
+.gt-address input{
+    width: 470px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    outline: none;
+}
+.gt-study{
+
+  /*   width: 560px; */
+    height: 64px;
+    /* margin-left: 50px; */
+    margin-top: 30px;
+    text-align: left;
+    position: relative;
+}
+.gt-textdailSpan{
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+.gt-textdail{
+    width: 470px;
+     height: 64px;
+    
+    box-sizing: border-box;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+}
+.gt-addStudents{
+
+    width: 80px;
+    height: 32px;
+    margin-top: 30px;
+    margin-left: 156px;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-image: url('../image/ico/u8094.png');
+    cursor: pointer;
+}
+.gt-addStudents:hover{
+    background-image: url('../image/ico/u8094_mouseOver.png')
+}
+.gt-letMari{
+    margin-left:3px; 
+}
+
+/*头像处样式*/
+.gt-headImg{
+   
+    position: absolute;
+    top:30px;
+    right: 20%;
+}
+.gt-headImagbox{
+    width: 120px;   
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 1);
+position: relative;
+}
+.gt-headImagpost{
+    position: absolute;
+    top:60px;
+    right:35px;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    display:inline-block;
+    background-image: url('../image/ico/u8995.png');
+    background-size: 50px 50px;
+}
+.gt-listImg{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.gt-listImg img{
+    width: 100%;
+    height: 100%;
+}
+.gt-headimgText{
+    position: absolute;
+    top:5px;
+    left: -40px;
+}
+.gt-imagChoose{
+    margin-top:20px;
+    width: 80px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+   background-color: rgba(1, 185, 254, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(1, 185, 254, 1);
+    border-radius: 2px;
+}
+
+.gt-imageSugg{
+    margin-top: 10px;
+}
+.gt-imageSugg span{
+font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #999999;
+}
+/*家长信息*/
+.gt-familyInforma{
+width: 100%;
+height: 440px;
+margin-top: 20px;
+ background-color: rgba(255, 255, 255, 1);
+box-sizing: border-box;
+ border-width: 1px solid rgba(238, 238, 238, 1);
+ color: #353535;
+ font-family: 'Microsoft YaHei UI';
+ font-weight: 400;
+font-style: normal;
+font-size: 13px;
+}
+
+.gt-Parents{
+   margin-left: 35px;
+   padding-top: 30px;
+    font-size: 13px;
+    color: #333333;
+}
+.gt-ParentsMar{
+    margin-left: 20px;
+}
+.gt-Parents input{
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    width: 180px;
+    height: 32px;
+    outline: none;
+}
+
+.gt-selecA{
+    display: inline-block;
+    margin-left: 4px;
+    width: 100px;
+     height: 32px;
+     position: relative;
+     border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+
+
+}
+
+.gt-selecAa{
+    padding-left: 2px;
+     width: 100px;
+     height: 32px;
+     font-size: 14px;
+     line-height: 28px;
+    border:0px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background:url('../image/ico/u584.png') no-repeat right center; 
+     background-size: 15px 9px;
+}
+
+.gt-addParents{
+    margin-left:35px;
+    margin-top: 30px;
+}
+.gt-nextBut{
+    display:inline-block;
+    margin-left: 400px;
+}
+.gt-cancelBut{
+    display:inline-block;
+    box-sizing: border-box;
+    border: 1px solid rgba(201, 201, 201, 1);
+    border-radius: 2px;
+    font-family: 'Microsoft YaHei UI';
+    background-image: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #353535;
+    background-color: rgba(255, 255, 255, 1);
+    margin-left: 20px;
+}
+.gt-cancelBut:hover{
+
+background-image: none;
+  border: 1px solid rgba(13,194,146,1);
+}
+
+form{position:relative;}
+.gt-imgLid{position:absolute;top:0;left:0;height:30px;width:100px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+ .gt-Bselec{
+  width: 180px;
+       }
+ .gt-warning{
+    border: 1px solid red;
+}
+.gt-waringName{
+    color: red;
+    position: absolute;
+    top: 34px;
+    left: 109px;
+    display: none;
+}
+.gt-waringPhote{
+    color: red;
+    position: absolute;
+    top: 34px;
+    left: 399px;
+     display: none;
+}
+.gt-delfater{
+    width: 80px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-image: url('../image/ico/u8094.png');
+    cursor: pointer;
+}

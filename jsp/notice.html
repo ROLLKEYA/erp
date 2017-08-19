@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+   <link rel="stylesheet" href="../css/notice.css">
+</head>
+<body>
+ <div class="gt-bigBox">
+
+<div class="gt-bgd">
+   
+    <div class="gt-backDiv">
+
+<p> <span class="gt-backCur"><span>前台营业 > </span> <span class="gt-backBlu ">通知</span></span> <span class="gt-backSp">返回</span> </p>
+      </div>
+<div class="gt-deails" style="display:block">
+
+       <!--学员信息-->
+      
+     
+
+    
+      <div class="gt-StuAdminiBox">
+<div class="gt-StuAdmini"> <span id="gt-StuIfromtion" class="gt-StuIfromtion gt-clikStyl ">公告通知</span> <span  id="gt-StuFile" class="gt-StuFile">短信通知</span></div>
+  <!--公告通知 小项-->
+
+<div class="gt-MIS" style="display:block">
+        
+ 
+  <div class="gt-prSe ">
+            <span id='gt-newAddBut' class="gt-exported">新增</span> 
+           <div class="gt-billboards"><span>公告类型：
+                  <span  class="gt-ClsectA">             
+                     <select name="" id="gt-notice" class="gt-ClsectAa">
+                        <option value="">内部公告</option>
+                        <option value="">外部公告</option>
+                     </select>         
+                  </span> 
+                </span> 
+                <span class="gt-prSearc gt-ctrol"> 
+               <input type="text" id='gt-input1' placeholder="请输入搜索关键词">
+                <span id='gt-searc1' class="gt-prSearcA"> <img src="../image/ico/u544.png" alt=""></span>
+             </span>  </div>
+               
+                 
+    </div>
+
+<!--表格-->
+             
+<div class="gt-Elist">
+
+<table  class="gt-enrotabl">
+                  
+                  <tbody id='gt-table1'>
+                        
+                  </tbody>
+ </table>
+
+                    
+        </div>
+  <div class="gt-flort">
+  <div class="gt-paging">
+        <span id='gt-homePg1' class=" gt-HoverclikBackg gt-clikBackg">1</span> 
+        <span id='gt-showPg1' class="gt-HoverclikBackg"></span>
+        <span id='gt-nextPg1' class="gt-Next gt-HoverclikBackg"><img src="../image/ico/u565.png" alt=""></span>
+      </div>
+</div>
+
+    </div>
+
+
+   <!--短信通知-->
+  
+        <div class="gt-SMS" style="display:none">
+          
+          <div class="gt-smsHeader"><span class="gt-smHspan">短信剩余 ：<span class="gt-smHspanClor">150</span></span> <span class="gt-smHspanB">充值</span></div>
+           <div class="gt-sendWay"> <span id='gt-sendMAge' class="gt-send">发送短信</span>  
+           <div class="gt-sendGo">
+            <span class="gt-prSearc gt-ctrol"> 
+               <input type="text" placeholder="请输入搜索关键词">
+                <span class="gt-prSearcA"> <img src="../image/ico/u544.png" alt=""></span>
+             </span> </div>
+             </div>
+
+
+            <!--表格-->
+             
+<div class="gt-SMSlist">
+
+                  <table  class="gt-SMStabl">
+                  <tbody id='gt-table2'>
+
+                  </tbody>
+
+                      
+                    </table>
+                    
+        </div>
+   <div>
+<div class="gt-flort">
+  <div class="gt-paging"><span id='gt-homePg2' class=" gt-HoverclikBackg gt-clikBackg">1</span>
+       <span id='gt-showPg2' class="gt-HoverclikBackg"></span> 
+      <span id='gt-nextPg2' class="gt-Next gt-HoverclikBackg"><img src="../image/ico/u565.png" alt=""></span></div>
+</div>
+
+
+        </div>
+
+
+
+      </div>
+      </div>
+ </div> 
+       
+</div>
+       <!-- 新增公告 -->
+    <div id='gt-typig' class="gt-typig" style="display:none">
+<div class="gt-suppHerad ">
+    <span class="gt-supSpanLf">新增公告</span>
+      <span class="gt-supSpanRt"><img src="../image/ico/u2527.png" alt=""></span>
+</div>
+
+   <div class="gt-perDiv"> 
+    <span class="gt-soanlf gt-choseBox" >公告类型 :  </span>  <div id='gt-typeNotice1' class="gt-choseBox" ><div class="gt-round gt-roundRad"><span class="gt-roundSpan"></div> <span class="gt-trSpan">内部公告</span></div>
+     <div id='gt-typeNotice2' class="gt-choseBox"  ><div class="gt-round gt-roundRad gt-roundRB"> <span class="gt-roundSpan"></span></div> <span class="gt-erSpan">外部公告</span></div>
+    
+  </div>
+ <div class="gt-perDiv"> 
+    <span  class="gt-soanlf">标题 : </span>  <input id='gt-titleCent' class="gt-titail" type="text">
+    <span class="gt-repateconts2"> *请填写公告标题</span>
+  </div>
+<div class="gt-relate">
+
+
+    <div class="gt-relateGt gt-soanlf"> <span>公告内容 : </span> </div><textarea   name="" id="gt-noticeContent" cols="30" rows="10"> </textarea>
+     <span class="gt-repateconts"> *请填写公告内容 </span>
+</div>
+
+<div class="gt-butBox gt-relateMrg"> <span id='gt-butSave' class="gt-butSave">保存</span>  <span class="gt-butNoSave">取消</span></div>
+
+</div>
+
+<!-- 添加短信 -->
+    <div id='gt-typigSms' class=" gt-typig " style="display:none">
+<div class="gt-suppHerad ">
+    <span class="gt-supSpanLf">新增短信</span>
+      <span class="gt-supSpanRt"><img src="../image/ico/u2527.png" alt=""></span>
+</div>
+
+  <div class="gt-relate">
+    <div class="gt-relateGt gt-SmsLf"> <span>短信内容 : </span> </div><textarea   name="" id="gt-noticeContent2" cols="30" rows="10"> </textarea>
+    <span class="gt-nolySmcent">*请输入短信内容</span>
+</div>
+
+<div class="gt-relate">
+    <div class="gt-relateGt gt-SmsLf"> <span>接受班级: </span> </div><textarea   name="" id="gt-noticeContent3" cols="30" rows="10"> </textarea>
+</div>
+
+<div class="gt-butBox gt-relateMrg"> <span id='gt-butSaveSms' class="gt-butSave">保存</span>  <span class="gt-butNoSave">取消</span></div>
+
+</div>
+
+
+ 
+
+
+                  
+                      
+                             <!--公告 通知-->
+                         <script type="text/template" id="table1">
+                  
+                         
+                      <tr>
+                          <td class="gt-Edatli0 "> 标题  </td>
+                          <td class="gt-Edatli1">发布时间</td>
+                          <td class="gt-Edatli2">公告类型</td>
+                          <td class="gt-Edatli3">发布人</td>
+                          <td  class="gt-Edatli4">操作</td>
+                           
+                    </tr>
+              <% for(var i=0,len=list.length; i<len; i++) { %>
+                        <tr>
+                          <td class="gt-Edatli0 "> <%=list[i].noticeTitle%> </td>
+                          <td class="gt-Edatli1"><%=list[i].updateDate%></td>
+                          <td  data-noticetype='<%=list[i].noticeType%>'class="gt-Edatli2 gt-list"></td>
+                          <td class="gt-Edatli3"><%=list[i].updateBy%></td>
+                         <td   class="gt-Edatli4  gt-delf"><span data-id='<%=list[i].id%>' class='gt-noticDel'>删除</span></td>
+                           
+                    </tr>
+                 <% } %>
+                      </script>
+
+                             <!--短信通知-->
+                         <script type="text/template" id="table2">
+                  
+                         
+                     <tr>
+                          <td class="gt-SMSli0 "> 短信内容 </td>
+                          <td class="gt-SMSli1">接受班级</td>
+                          <td class="gt-SMSli2">发送时间</td>
+                          <td class="gt-SMSli3">发布人</td>
+                           
+                    </tr>
+              
+                      <% for(var i=0,len=list.length; i<len; i++) { %>
+                   <tr>
+                          <td class="gt-SMSli0 gt-tdHight "><%=list[i].smsContent%></td>
+                          <td class="gt-SMSli1 gt-tdHight"><%=list[i].teamName%></td>
+                          <td class="gt-SMSli2 gt-tdHight gt-tdCentr"><%=list[i].updateDate%></td>
+                          <td class="gt-SMSli3 gt-tdHight gt-tdCentr"><%=list[i].updateBy%></td>
+                           
+                    </tr>
+                  <% } %>
+
+                      
+                      </script>
+
+
+<div class="gt-trans" style="display:none"></div>
+ <script src="../js/common/jquery-1.8.3.js"></script>
+ <script src="../js/common/underscore-min.js"> </script>
+ <script src="../js/common/common.js"> </script>
+ <script src="../js/notice/notice.js"></script>
+ 
+</body>
+</html>

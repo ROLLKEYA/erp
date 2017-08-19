@@ -1,0 +1,1702 @@
+@charset "utf-8";
+	*{
+    padding:0px;
+    margin: 0px;
+    }
+    input,textarea{
+        text-indent:5px;
+    }
+
+   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #666; 
+
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #666; 
+
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+color: #666; 
+
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+color: #666; 
+
+} 
+   img {
+    border: 0;
+    vertical-align:middle;
+      } 
+
+    .gt-boxCentr{
+        width: 90%;
+        margin: 0 auto;
+    }
+table { 
+  border-collapse:collapse; 
+  border-spacing:0; 
+ } 
+ th,td { 
+  padding: 0; 
+  margin: 0;
+ }
+  
+     /*返回*/
+    .gt-backDiv{
+    width: 88%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #353535;
+        margin-left: 5%;
+    }
+    .gt-backSp{
+    float: right;
+    width: 60px;
+    height: 30px;
+    background-color: rgba(1, 185, 254, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 185, 254, 1);
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    }
+  .gt-backBlu{
+      color: #0DC292;
+  }
+  .gt-backCur{
+  cursor:pointer; 
+  }
+
+ /*选择*/
+.gt-StuAdmini{
+    width: 90%;
+    height: 40px;
+   background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(238, 238, 238, 1); 
+    margin-top: 20px; 
+    position: relative;
+    margin-bottom: 1px;
+    margin-left: 3%;
+    
+}
+.gt-StuIfromtion{
+        position: absolute;
+        bottom:0px;
+        left: 0px;
+        text-align: center;
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        box-sizing: border-box;
+       border-bottom: 2px solid rgba(255, 255, 255, 1);;
+        font-size: 14px;
+        line-height: 30px;
+        cursor:pointer;
+}
+.gt-StuIfromtion:hover{
+  box-sizing: border-box;
+     border-bottom: 2px solid rgba(13, 194, 146, 1);
+        color: rgba(13, 194, 146, 1);
+}
+.gt-StuFile{
+        position: absolute;
+        text-align: center;
+        display: inline-block;
+        bottom:0px;
+        left: 200px;
+        width: 100px;
+        height: 30px;
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+       box-sizing: border-box;
+        font-size: 14px;
+        line-height: 30px;
+        cursor:pointer;
+}
+.gt-clikStyl{
+     box-sizing: border-box;
+     border-bottom: 2px solid rgba(13, 194, 146, 1);
+        color: rgba(13, 194, 146, 1);
+}
+
+.gt-StuFile:hover{
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(13, 194, 146, 1);
+ color: rgba(13, 194, 146, 1);
+}
+.gt-StuAdminiBox{
+     width: 100%;
+    height: 1117px;
+   background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    margin-top:20px;
+
+}
+.gt-StuInformation{
+    width: 90%;
+    height: 80px;
+        background-color: rgba(251, 241, 204, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(245, 218, 167, 1);
+    border-radius: 2px;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+    margin-top: 20px;
+    margin-left: 3%;
+}
+.gt-StuDiv{
+
+margin-left: 30px;
+margin-top: 13px;
+
+}
+.gt-StuMgriLf{
+    margin-left: 10px;
+}
+.gt-StuLf{
+    margin-left: 30px;
+}
+
+.gt-colorSpan{
+        color: #FD7768;
+}
+
+/*搜索栏*/
+.gt-prSe{
+    width:100%;
+    height: 30px;
+   margin-left: 3%;
+    margin-top: 20px;
+     font-size: 14px;
+     font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #353535;
+}
+/*搜索栏*/
+.gt-prSearc{
+    position: relative;
+    display: inline-block;
+    width: 227px;
+  
+    margin-right: 30px;
+    height: 28px;
+    border: 1px solid  rgba(210, 210, 210, 1);
+}
+.gt-prSearc input{
+    width: 180px;
+    height: 28px;
+    border: none;
+    outline: none;
+    margin-left:10px;
+}
+.gt-prSearcA{
+    display: inline-block;
+position: absolute;
+top:5px;
+right: 10px;
+
+}
+.gt-prSearc img{
+width:18px;
+height: 18px;
+
+}
+.gt-prDate{
+    display: inline-block;
+
+}
+.gt-prDate input{
+      width: 163px;
+    height: 28px;
+     font-size: 14px;
+    margin-left:10px;
+}
+.gt-ClsectA{
+    display: inline-block;
+    width: 150px;
+     height: 28px;
+     position: relative;
+     border: 1px solid  rgba(210, 210, 210, 1);
+}
+.gt-ClsectAa{
+     width: 100%;
+     height: 100%;
+     font-size: 14px;
+     line-height: 28px;
+     border:0px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background:url('../image/ico/u584.png') no-repeat right center; 
+     background-size: 15px 9px;
+}
+.gt-dateTime{
+display: inline-block;
+width: 220px;
+height: 28px;
+margin-left: 40px;
+ text-align: center;
+}
+.gt-dateTime span{
+   margin-right: 5px; 
+}
+.gt-dateTime input{
+    width: 130px;
+    height: 28px;
+     border: 1px solid  rgba(210, 210, 210, 1);
+    text-align: center;
+    line-height: 28px;
+}
+
+/*表格*/
+
+.gt-Elist{
+   margin-top: 20px;
+    width:90%;
+    text-align: center;
+   border: 1px solid #e4e4e4;
+   margin-top: 30px;
+   margin-left: 3%;
+}
+.gt-enrotabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+
+}
+
+.gt-enrotabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-enrotabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-enrotabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动表格*/
+
+.gt-Edatli0{
+width: 80px;
+position: relative;
+}
+ 
+ .gt-Edatli1{
+width: 60px;
+}
+.gt-Edatli2{
+width: 60px;
+}
+ .gt-Edatli3{
+width: 60px;
+}
+ .gt-Edatli4{
+width: 120px;
+}
+ .gt-Edatli5{
+width: 150px;
+}
+.gt-enrotabl .gt-Edatli6{
+ position: relative;
+width: 150px;
+
+}
+.gt-enrotabl .gt-Edatli7{
+width: 80px;
+position: relative;
+border-right: none;
+}
+.gt-enrotabl tbody tr:hover td { background-color: #f0f0f1; }
+
+/*来源下拉选择*/
+.gt-Edatli0 ul{
+    width: 100%;
+    top: 40px;
+    list-style: none;
+    position: absolute;
+    z-index: 12;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    border-radius: 2px;
+    display: none;
+   
+}
+.gt-Edatli0 ul li{
+     margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.gt-Edatli0 ul li:hover{
+ background-color: #f0f0f1;
+
+}
+
+.gt-ImgIco{
+    display: inline-block;
+position: absolute;
+top:12px;
+right:20px;
+
+}
+.gt-ImgIco img{
+width:15px;
+height: 7px;
+
+}
+/*状态下拉*/
+.gt-Edatli6 ul{
+    width: 100%;
+    top: 40px;
+    list-style: none;
+    position: absolute;
+    z-index: 12;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    border-radius: 2px;
+    display: none;
+}
+.gt-Edatli6 ul li{
+     margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.gt-Edatli6 ul li:hover{
+ background-color: #f0f0f1;
+
+}
+.gt-ImgIco2{
+ display: inline-block;
+position: absolute;
+top:15px;
+right:15px;
+}
+
+.gt-cheques{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    width:48px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+
+/*蓝色背景*/
+.gt-chequImg{
+background-image: url('../image/ico/u796.png');
+background-size: 48px 24px;
+}
+.gt-convInter{
+    width: 90px;
+    height: 270px;
+    top:32px;
+    left: 18px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    border-radius: 2px;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    z-index: 5;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+    display: none;
+}
+
+.gt-convInter ul{
+          list-style: none;
+}
+
+.gt-convInter ul li{
+margin-top: 12px;
+cursor: pointer;
+
+}
+.gt-convInter ul li:hover{
+    background-color: #f0f0f1;
+}
+.gt-paging {
+    float: right;
+margin-top: 7px;
+ height: 28px;
+  border:1px solid #f0f0f1;
+}
+.gt-paging span{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+     float: left;
+     box-sizing: border-box;
+     background-image: url('../image/ico/u561.png');
+     background-size: 40px 30px;
+     /*border-top:1px solid #f0f0f1;*/
+     border-right:1px solid #f0f0f1;
+     /*border-bottom:1px solid #f0f0f1;*/
+     cursor: pointer;
+
+}
+    .gt-paging .gt-curText{
+        cursor: text;
+    }
+.gt-Next img{
+width: 7px;
+height: 12px;
+}
+.gt-HoverclikBackg:hover{
+
+background-color: #f0f0f1;
+}
+ .gt-paging .gt-clikBackg{
+    background-color: rgba(13, 194, 146, 1);
+  
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(13, 194, 146, 1);
+    border-radius: 2px;
+    color: white;
+}
+/*背景透明 防止点击*/
+.gt-bigBox{
+    width: 100%;
+    
+    position: relative;
+}
+
+/*修改项页面样式*/
+.gt-revisions{
+    width: 800px;
+    /* height: 900px; */
+    position: fixed;
+    top:20px;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    z-index: 99;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+}
+.gt-revisionsHeard{
+    width:798px;
+    height: 40px;
+    float: right;
+    background-color: rgba(248, 248, 248, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(238, 238, 238, 1);
+}
+.gt-canl{
+    display:inline-block;
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+.gt-canl img{
+    width: 16px;
+    height: 16px;
+}
+.gt-NameCar{
+     display:inline-block;
+    float:left;
+    margin-left: 20px;
+      text-align: center;
+    line-height: 40px;
+}
+
+
+/*表格*/
+
+.gt-revList{
+  
+    width: 700px;
+  margin: 0 auto;
+   border: 1px solid #e4e4e4;
+ margin-top: 50px;
+}
+.gt-revListtabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+        color: #333333;
+
+}
+
+.gt-revListtabl td{
+    
+   height: 50px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-revListtabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-revListtabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动表格*/
+
+.gt-revli0{
+width: 80px;
+
+}
+ 
+ .gt-revli1{
+width: 100px;
+}
+.gt-revli2{
+width: 80px;
+}
+ .gt-revli3{
+width: 80px;
+}
+ .gt-revli4{
+width: 80px;
+}
+ .gt-revli5{
+width: 80px;
+}
+.gt-revli6{
+width: 150px;
+}
+
+.gt-revListtabl tbody tr:hover td { background-color: #f0f0f1; }
+
+.gt-perDiv{
+    
+    margin-top: 25px;
+    margin-left: 70px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #353535;
+    font-size: 14px;
+}
+
+  .gt-perSpan{
+    display: inline-block;
+    width:180px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    position: relative;
+    
+  }
+  .gt-perSpan input{
+      border: none;
+      outline: none;
+      line-height: 30px;
+      margin-left: 4px;
+      width:170px;
+      height: 30px;  
+      }
+      .gt-perPostion{
+    width: 20px;
+    height: 20px;
+     position:absolute;
+    top:5px;
+    right: 3px;
+    cursor: pointer;
+}
+
+.gt-magiLfet{
+margin-left:35px;
+}
+
+.gt-revSchloo{
+    margin-left: 44px;
+}
+
+.gt-revLfet{
+  margin-left: 64px;  
+}
+
+/*性别*/
+
+.gt-round{
+
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+.gt-round:hover{
+    background-image: url('../image/ico/u8376_mouseOver.png');
+    background-size: 20px 20px;
+   
+}
+.gt-roundRB:hover{ background-image: url('../image/ico/u2644_mouseOver.png');
+    background-size: 20px 20px;}
+.gt-roundRad{
+ background-image: url('../image/ico/u2592.png');
+    background-size: 20px 20px;
+}
+.gt-roundRB{
+    background-image: url('../image/ico/u2644.png');
+    background-size: 20px 20px; 
+}
+.gt-roundSpan{
+
+    display: inline-block;
+    position: absolute;
+    width:10px;
+    height: 10px;
+    top:5px;
+    right: 5px;
+    border-radius: 50%;
+    background-image: url('../image/ico/u2646.png');
+    background-size: 10px 10px;
+
+}
+.gt-man, .gt-woman{
+    display: inline-block;
+   margin-left: 20px;
+}
+.gt-manSpan{
+     width:20px;
+    height: 20px;
+}
+.gt-year{
+   margin-left: 115px;  
+}
+/*年级*/
+.gt-rveYear{
+    display: inline-block;
+    width: 180px;
+     height: 30px;
+     position: relative;
+     border: 1px solid  rgba(210, 210, 210, 1);
+}
+.gt-rveYearSlec{
+     width: 100%;
+     height: 100%;
+     font-size: 14px;
+     line-height: 30px;
+     border:0px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background:url('../image/ico/u584.png') no-repeat right center; 
+     background-size: 15px 9px;
+      text-indent:5px;
+}
+/*不能修改的内容（透明背景)*/
+.gt-revbackg{
+    text-indent:5px;
+    background-color: #F8F8F8;
+    line-height: 30px;
+}
+.gt-sex{
+    margin-left: 5px;
+}
+
+.gt-reference{
+    margin-left: 28px;
+
+}
+
+.gt-addSct{
+     margin-left:90px;
+     margin-top: 10px; 
+    width: 56px;
+    height: 19px;
+    cursor: pointer;
+}
+.gt-addSct span{
+    color: #0DC292;
+}
+.gt-multid{
+    width: 100px;
+     height: 30px;
+}
+.gt-textInput{
+    width: 80px;;
+    height: 32px;
+    margin-left: 15px;
+    outline: none;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+.gt-multidMargi{
+    margin-left: 20px;
+}
+.gt-sjecode{
+    float: left;
+    margin-left: 48px;
+    display: inline-block;
+}
+/*家庭住址*/
+.gt-address{
+    width: 560px;
+    height: 32px;
+    margin-left: 38px;
+    margin-top: 20px;
+      font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #353535;
+    font-size: 14px;
+  
+}
+.gt-address input{
+    width: 470px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    outline: none;
+}
+/*学情分析*/
+.gt-study{
+
+    width: 560px;
+    height: 64px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+      font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    color: #353535;
+    font-size: 14px;
+    position: relative;
+}
+.gt-textdailSpan{
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    left: 4px;
+}
+.gt-textdail{
+    width: 470px;
+     height: 64px;
+     margin-left: 75px;
+    box-sizing: border-box;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+}
+
+ 
+  .gt-parenName input{
+     border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 2px;
+      outline: none;
+      line-height: 30px;
+      margin-left: 4px;
+      width:80px;
+      height: 30px;  
+      }
+      .gt-relation{
+          width: 80px;
+      }
+      .gt-parenName .gt-parenNameIput{
+          width: 130px;
+      }
+      .gt-parenNameSpan{
+margin-left: 38px;
+
+      }
+      .gt-parenMort{
+          width: 700px;
+      }
+      .gt-phtoe{
+          margin-left: 20px;
+      }
+      .gt-membersIcoBox{
+          position: relative;
+          margin-left: 10px;
+      }
+      .gt-membersIco{
+          position: absolute;
+          top:0px;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+         
+      }
+      .gt-membersIco img{
+            width: 18px;
+            height: 18px;
+      }
+      .gt-membersIcoMg{
+         margin-left: 25px;
+      }
+        .gt-sbjLtse{
+            margin-top: 4px;
+            margin-left: 5px;
+        }
+
+.gt-addStudents{
+
+    width: 80px;
+    height: 32px;
+    margin-top: 30px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-image: url('../image/ico/u8094.png');
+    cursor: pointer;
+    
+}
+.gt-addStudents:hover{
+    background-image: url('../image/ico/u8094_mouseOver.png')
+}
+.gt-cancelBut{
+    display:inline-block;
+    box-sizing: border-box;
+    border: 1px solid rgba(201, 201, 201, 1);
+    border-radius: 2px;
+    font-family: 'Microsoft YaHei UI';
+    background-image: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #353535;
+    background-color: rgba(255, 255, 255, 1);
+    margin-left: 20px;
+}
+.gt-cancelBut:hover{
+
+background-image: none;
+  border: 1px solid rgba(13,194,146,1);
+}
+.gt-nextBut{
+    display:inline-block;
+}
+.gt-button{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+/*线型*/
+.gt-backgrongLine{
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 32px;
+        width: 700px;
+        height: 2px;
+}
+.gt-backgrongLine img{
+     width: 700px;
+        height: 2px;
+}
+
+/*分班项*/
+.gt-divideCl{
+
+   width: 800px;
+    height: 840px;
+   position: absolute;
+    top:40px;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    z-index: 99;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+  font-size: 14px;
+    color: #333333;
+    
+}
+
+/*已报课程下拉长度*/
+ .gt-divideLong{
+          width: 180px;
+      }
+      .gt-divideDiv{
+          margin-top: 60px;
+          margin-left: 35px;
+      }
+
+
+/*表格*/
+
+.gt-divideList{
+  
+    width: 700px;
+  margin: 0 auto;
+   border: 1px solid #e4e4e4;
+ margin-top: 50px;
+}
+.gt-dividetabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+        color: #333333;
+
+}
+
+.gt-dividetabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-dividetabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-dividetabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动表格*/
+
+.gt-divide0{
+width: 80px;
+
+}
+ 
+ .gt-divide1{
+width: 100px;
+}
+.gt-divide2{
+width: 80px;
+}
+ .gt-divide3{
+width: 80px;
+}
+ .gt-divide4{
+width: 80px;
+}
+ .gt-divide5{
+width: 80px;
+}
+.gt-divide6{
+width: 150px;
+}
+
+.gt-dividetabl tbody tr:hover td { background-color: #f0f0f1; }
+
+/*点击选择*/
+ .gt-square{
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+     border: 1px solid #e4e4e4;
+    background-color: white;
+}
+
+ .gt-square span{
+ display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+     margin-top: 2px;
+}
+ .gt-squareImg{ 
+background-color: #0dc292;
+}
+  .gt-squareImgHook{
+     
+     
+background-image: url('../image/ico/u774.png');
+background-size: 15px 15px;
+}
+
+/*页数*/
+
+.gt-chekNext{
+text-align: center;
+margin-top: 20px;
+width: 140px;
+float: right;
+height: 60px;
+margin-right: 33px;
+
+
+}
+.gt-chekNext span {
+display: inline-block;
+width: 40px;
+height: 30px;
+line-height: 30px;
+ border: 1px solid #e4e4e4;
+font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+cursor: pointer;
+}
+.gt-chekNext .gt-Nopinter{
+    cursor: text;
+}
+.gt-hoverSpan:hover{
+
+    background: #f0f0f1; 
+}
+.gt-chekNext .gt-chekBlu{
+    color: white;
+   border: 1px solid #0DC292;
+    background: rgba(13, 194, 146, 1);
+}
+.gt-haveChosen{
+    
+   
+    margin-top:140px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+  color: #333333;
+   
+}
+
+/*确定 取消*/
+.gt-confirm{
+    width: 60px;
+    height: 32px;
+    display: inline-block;
+    background-image: url('../image/ico/u8094.png');
+    color: white;   
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.gt-confirm:hover{
+    background-image: url('../image/ico/u8094_mouseOver.png')
+}
+.gt-cancelled{
+
+   width: 60px;
+    height: 32px;
+    margin-left: 20px;
+    margin-top: 2px;
+    display: inline-block;
+    background-color: white;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(201, 201, 201, 1);
+    border-radius: 2px;
+    text-align: center;  
+    line-height: 32px;
+    cursor: pointer;
+}
+.gt-cancelled:hover{
+  
+  border: 1px solid rgba(13,194,146,1);
+}
+.gt-haveChoseDiv{
+    display: inline-block;
+    margin-left: 30px;
+    width: 274px;
+}
+.gt-haveChoseDivA{
+display: inline-block;
+margin-left: 0px;
+}
+
+.gt-attendance{
+
+ width: 800px;
+    height: 720px;
+    position: absolute;
+    top:100px;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    z-index: 99;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+  font-size: 14px;
+    color: #333333;
+  
+
+}
+.gt-atteDate{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.gt-atteDate input{
+    width: 140px;
+    height: 30px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(210, 210, 210, 1);
+    border-radius: 2px;
+}
+
+/*表格*/
+
+
+.gt-atte{
+   margin-top: 20px;
+    width: 650px;
+    text-align: center;
+  margin: 0 auto;
+   border: 1px solid #e4e4e4;
+   margin-top: 30px;
+   font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+.gt-attetabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    
+
+}
+
+.gt-attetabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-attetabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-attetabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*出勤情况表格*/
+
+.gt-atteli0{
+width:160px;
+position: relative;
+}
+ 
+ .gt-atteli1{
+width: 160px;
+position: relative;
+}
+.gt-atteli2{
+width: 160px;
+}
+ .gt-atteli3{
+width: 160px;
+}
+ .gt-atteli4{
+width: 160px;
+}
+
+
+.gt-attetabl tbody tr:hover td { background-color: #f0f0f1; }
+
+/*来源下拉选择*/
+.gt-atteli0 ul{
+    width: 100%;
+    top: 40px;
+    list-style: none;
+    position: absolute;
+    z-index: 12;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    border-radius: 2px;
+    display: none;
+   
+}
+.gt-atteli0 ul li{
+     margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.gt-atteli0 ul li:hover{
+ background-color: #f0f0f1;
+
+}
+
+.gt-atteImgIco{
+    display: inline-block;
+position: absolute;
+top:14px;
+right:43px;
+
+}
+.gt-atteImgIco img{
+width:12px;
+height: 7px;
+
+}
+
+.gt-atteli1 ul{
+    width: 100%;
+    top: 40px;
+    list-style: none;
+    position: absolute;
+    z-index: 12;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    border-radius: 2px;
+    display: none;
+   
+}
+.gt-atteli1 ul li{
+     margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.gt-atteli1 ul li:hover{
+ background-color: #f0f0f1;
+
+}
+.gt-atteColor{
+        color: #FD7768;
+}
+
+.gt-atteChekNext{
+    margin-top: 15px;
+    margin-right: 63px;
+}
+
+/*停课*/
+.gt-suspended{
+
+   width: 800px;
+    height: 360px;
+   position: absolute;
+    top:140px;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    z-index: 99;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+  font-size: 14px;
+    color: #333333;
+    
+}
+
+/*表格*/
+
+.gt-suspList{
+  
+    width: 700px;
+  margin: 0 auto;
+   border: 1px solid #e4e4e4;
+ margin-top: 80px;
+}
+.gt-susptabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+        color: #333333;
+
+}
+
+.gt-susptabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-susptabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-susptabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动表格*/
+
+.gt-suspli0{
+width: 80px;
+
+}
+ 
+ .gt-suspli1{
+width: 100px;
+}
+.gt-suspli2{
+width: 80px;
+}
+ .gt-suspli3{
+width: 80px;
+}
+ .gt-suspli4{
+width: 80px;
+}
+
+
+.gt-susptabl tbody tr:hover td { background-color: #f0f0f1; }
+
+/*点击选择*/
+ .gt-square{
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+     border: 1px solid #e4e4e4;
+    background-color: white;
+}
+
+ .gt-square span{
+ display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+     margin-top: 2px;
+}
+ .gt-squareImg{ 
+background-color: #0dc292;
+}
+  .gt-squareImgHook{
+     
+     
+background-image: url('../image/ico/u774.png');
+background-size: 15px 15px;
+}
+.gt-haveSuspended{
+    margin-top:50px; 
+}
+/*退课*/
+.gt-reopened{
+
+ width: 320px;
+    height: 200px;
+   position:fixed;
+    top:460px;
+    left:31%;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    z-index: 99;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+  font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+.gt-reopenedHeard{
+    width: 318px;
+}
+.gt-reopenedCenter{
+    text-align: center;
+    margin-top:80px;
+}
+.gt-reopenedChose{
+   margin-top:30px;
+}
+
+/*学员档案项*/
+
+.gt-archiveIMon{
+    height: 40px;
+}
+
+.gt-archiveDiv{
+    margin-top: 10px;
+}
+
+/*导出按钮*/
+.gt-exported{
+    float: right;
+    display: inline-block;
+    color: white;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-image: url('../image/ico/u5374.png')
+}
+.gt-exported:hover{
+   background-image: url('../image/ico/u14366_mouseOver.png')
+}
+
+/*表格*/
+
+.gt-archivelist{
+   margin-top: 20px;
+    width: 850px;
+    text-align: center;
+  margin: 0 auto;
+   border: 1px solid #e4e4e4;
+   margin-top: 30px;
+}
+.gt-archivetabl{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none; 
+    outline: none;
+    font-family: 'Microsoft YaHei UI Regular', 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+
+}
+
+.gt-archivetabl td{
+    
+   height: 40px;
+   border-right: 1px solid #e4e4e4;
+   border-bottom: 1px solid white;
+ 
+}
+/*奇数行*/
+.gt-archivetabl tbody tr:nth-child(odd) td { background-color: #f2f2f2; }
+/*偶数行*/
+.gt-archivetabl tbody tr:nth-child(even) td { background-color: #ffffff; }
+
+/*报名活动表格*/
+
+.gt-archive0{
+width: 60px;
+}
+ 
+ .gt-archive1{
+width: 60px;
+}
+.gt-archive2{
+width: 60px;
+}
+ .gt-archive3{
+width: 100px;
+}
+ .gt-archive4{
+width: 160px;
+}
+ .gt-archive5{
+width: 150px;
+}
+
+.gt-archive6{
+width: 60px;
+}
+
+
+.gt-archivetabl tbody tr:hover td { background-color: #f0f0f1; }
+
+/*.gt-details{
+ 
+    text-align: center;
+    line-height: 24px;
+    color: white;
+}*/
+
+.gt-archiveMG{
+    margin-top: 20px;
+}
+
+/*详情*/
+
+.gt-detailList{
+    width: 800px;
+    height: 900px;
+    position: fixed;
+    top:20px;
+    left:29%;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(238, 238, 238, 1); 
+    z-index: 99;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+}
+.gt-detaildata{
+    width: 100%;
+    height: 180px;
+}
+
+.gt-detaUlLf{
+font-size: 14px;
+margin-left: 80px;
+float: left;
+list-style: none;
+}
+
+
+.gt-detaUlLf li, .gt-detaUlRg li{
+    margin-top: 30px;
+}
+.gt-detaUlRg{
+font-size: 14px; 
+float: left;
+list-style: none;
+margin-left: 145px;
+}
+.gt-detaUlRg li:nth-child(1),.gt-detaUlLf li:nth-child(1){
+    margin-top: 5px;
+}
+.gt-analysed{
+    width: 100%;
+      height: 140px;
+list-style: none;
+margin-left: 80px;
+}
+
+.gt-analysed li{   
+
+     margin-top: 30px;
+     }
+
+     .gt-paprentDate{
+         margin-top: 30px;
+         margin-left: 80px;
+     }
+     .gt-Space{
+         margin-left: 35px;
+     }
+  .gt-multlf{
+            margin-left: 48px;
+        }
+.gt-Flort{
+    width: 90%;
+    margin-left: 3%;
+}
+ .gt-trans{
+            position: absolute;
+            left: 0px;
+            top: -1px;
+            width: 1282px;
+            height:110%;
+            background-image: url('../image/ico/u2518.png');
+           background-size: 100% 100%;
+          
+            filter:alpha(opacity=30); /*IE滤镜，透明度50%*/
+            -moz-opacity:0.3; /*Firefox私有，透明度50%*/
+            opacity:0.3;/*其他，透明度50%*/
+            z-index:88;
+        }
+        .gt-QsbjBox{
+              height: 100px;
+              overflow-y: auto;
+              border: 1px solid #dfdfdf; 
+              display: inline-block;
+              width: 471px;
+              margin-left: 3px;
+        }
+        .gt-datedom{
+            display: none;
+        }
+        .gt-delfater{
+            width: 80px;
+            height: 32px;
+            display: inline-block;
+            text-align: center;
+            line-height: 32px;
+            font-family: 'Microsoft YaHei UI';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            color: #FFFFFF;
+            background-image: url('../image/ico/u8094.png');
+            cursor: pointer;
+        }
+        .gt-convInter{left: 81px;}
+  @media screen and (min-width: 1280px){
+     .gt-trans{
+           left: 0px;
+           top: -1px;
+         width: 100%;
+         height: 110%;
+     } 
+    
+  }
